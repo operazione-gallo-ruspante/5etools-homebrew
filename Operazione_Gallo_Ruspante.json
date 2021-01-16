@@ -1,0 +1,2072 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "OperazioneGalloRuspante",
+				"abbreviation": "OGR",
+				"full": "Operazione Gallo Ruspante",
+				"url": "",
+				"authors": [
+					"Gallo Ruspante"
+				],
+				"convertedBy": [],
+				"targetSchema": "1.0.0"
+			},
+			{
+				"json": "SaneMagicItemPricesExpanded",
+				"abbreviation": "SMIP2",
+				"full": "Sane Magic Item Prices Expanded",
+				"authors": [
+					"Saidoro",
+					"Voivode",
+					"TheGiddyLimit"
+				],
+				"convertedBy": [
+					"TheGiddyLimit"
+				],
+				"version": "1.0",
+				"url": "http://www.giantitp.com/forums/showthread.php?424243",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 1610541830,
+		"dateLastModified": 1610541830
+	},
+	"monster": [
+		{
+			"name": "Nabassu (Progeny of Solqommon)",
+			"source": "OperazioneGalloRuspante",
+			"page": 135,
+			"size": "M",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"demon"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 190,
+				"formula": "20d8 + 100"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 60
+			},
+			"str": 22,
+			"dex": 14,
+			"con": 21,
+			"int": 14,
+			"wis": 15,
+			"cha": 17,
+			"save": {
+				"str": "+12",
+				"dex": "+8"
+			},
+			"skill": {
+				"perception": "+8"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 18,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"poisoned"
+			],
+			"languages": [
+				"Abyssal",
+				"telepathy 120 ft."
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"name": "Demonic Shadows",
+					"entries": [
+						"The nabassu darkens the area around its body in a 10-foot radius. Nonmagical light can't illuminate this area of dim light."
+					]
+				},
+				{
+					"name": "Devour Soul",
+					"entries": [
+						"A nabassu can eat the soul of a creature it has killed within the last hour, provided that creature is neither a construct nor an undead. The devouring requires the nabassu to be within 5 feet of the corpse for at least 10 minutes, after which it gains a number of Hit Dice ({@dice d8}s) equal to half the creature's number of Hit Dice. Roll those dice, and increase the nabassu's hit points by the numbers rolled. For every 4 Hit Dice the nabassu gains in this way, its attacks deal an extra 3 ({@dice 1d6}) damage on a hit. The nabassu retains these benefits for 6 days. A creature devoured by a nabassu can be restored to life only by a {@spell wish} spell."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The nabassu has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The nabassu's weapon attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The nabassu uses its Soul-Stealing Gaze and makes two attacks: one with its claws and one with its bite."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}32 ({@damage 4d12 + 6}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under the vampire's control."
+					]
+				},
+				{
+					"name": "Soul-Stealing Gaze",
+					"entries": [
+						"The nabassu targets one creature it can see within 30 feet of it. If the target can see the nabassu and isn't a construct or an undead, it must succeed on a {@dc 16} Charisma saving throw or reduce its hit point maximum by 13 ({@damage 2d12}) damage and give the nabassu an equal number of temporary hit points. This reduction lasts until the target finishes a short or long rest. The target dies if its hit point maximum is reduced to 0, and if the target is a humanoid, it immediately rises as a ghoul under the nabassu's control."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The nabassu can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The nabassu regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The nabassu moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"The nabassu makes one unarmed strike."
+					]
+				},
+				{
+					"name": "Bite (Costs 2 Actions)",
+					"entries": [
+						"The nabassu makes one bite attack."
+					]
+				}
+			],
+			"environment": [
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"fluff": {
+				"name": "Nabassu",
+				"source": "MTF",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"name": "Nabassu",
+										"type": "entries",
+										"entries": [
+											"The insatiable nabassus prowl the multiverse in search of souls to devour. If they think they can kill a creature and consume its soul, they attack—even if that other creature is a demon, including another nabassu."
+										]
+									},
+									{
+										"name": "Hated Outcasts",
+										"type": "entries",
+										"entries": [
+											"Demons have few rules, and the murder of other demons hardly raises an eyebrow among these fiends. The act of devouring souls is something else. For this reason, most demons shun nabassus and force them to live on the fringes of the Abyss. There, nabassus pick off weaker demons or, if the situation warrants, gather in packs to take down larger prey. Some especially powerful nabassus even search for demon lords' amulets."
+										]
+									},
+									{
+										"name": "Demonic Infiltrators",
+										"type": "entries",
+										"entries": [
+											"Whenever magic pulls demons from the Abyss to the Material Plane, nabassus try to get summoned so that they can embark on a feast of souls there. If a nabassu is summoned, it tries to break free so that it can devour the soul of its summoner and then set out to feed on the souls of whatever creatures it can catch. One way a summoner can avoid this fate is by providing a steady supply of souls to the nabassu, which can cause the demon to be cooperative—for as long as the supply lasts."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MTF/Nabassu.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MTF/Nabassu.png?v=1.103.2",
+			"soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/667/nabassu.mp3",
+			"traitTags": [
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			]
+		},
+		{
+			"name": "Bhanu",
+			"source": "OperazioneGalloRuspante",
+			"level": 8,
+			"size": "M",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Loxodon"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item shield|phb}",
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d8 + 40",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 20,
+			"int": 12,
+			"wis": 20,
+			"cha": 13,
+			"save": {
+				"str": "+2",
+				"dex": "+3",
+				"con": "+5",
+				"int": "+1",
+				"wis": "+8",
+				"cha": "+4"
+			},
+			"skill": {
+				"medicine": "+5",
+				"acrobatics": "+3",
+				"animal handling": "+5",
+				"arcana": "+1",
+				"athletics": "+2",
+				"deception": "+1",
+				"history": "+4",
+				"insight": "+8",
+				"intimidation": "+1",
+				"investigation": "+1",
+				"nature": "+1",
+				"perception": "+5",
+				"performance": "+1",
+				"persuasion": "+4",
+				"religion": "+4",
+				"sleight of hand": "+3",
+				"stealth": "+3",
+				"survival": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"any two languages"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Bhanu is a level 8 spellcaster"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell bless}",
+								"{@spell cure wounds}",
+								"{@spell guiding bolt}",
+								"{@spell healing word}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell lesser restoration}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell aura of vitality}",
+								"{@spell dispel magic}",
+								"{@spell mass healing word}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}"
+							],
+							"slots": 2
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Voice of Authority",
+					"entries": [
+						"If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see.",
+						"If the spell targets more than one ally, you choose the ally who can make the attack."
+					]
+				},
+				{
+					"name": "Embodiment of the Law",
+					"entries": [
+						"If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.",
+						"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Quarterstaff",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage, plus 4 ({@damage 1d8}) radiant damage."
+					]
+				},
+				{
+					"name": "Healing Word + Voice of Authority",
+					"entries": [
+						"If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see."
+					]
+				},
+				{
+					"name": "Spell + Voice of Authority",
+					"entries": [
+						"If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Embodiment of the Law",
+					"entries": [
+						"1 Enchantment Spell",
+						"If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.",
+						"You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+					]
+				}
+			],
+			"fluff": {
+				"name": "Priest",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Priests bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites. A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties."
+								]
+							}
+						]
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Priest.png?v=1.116.8",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/priest.mp3?v=1.116.8"
+			},
+			"languageTags": [
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	],
+	"variantrule": [
+		{
+			"name": "Starting Party Wealth; Wealth per Level",
+			"type": "section",
+			"page": 1,
+			"source": "OperazioneGalloRuspante",
+			"entries": [
+				"Use the following tables to determine parties wealth at the beginning of a new campaign. Parties will start with the appropriate magic items and a sum of money, following by the tables below:",
+				{
+					"name": "Starting Magic Items for Parties",
+					"type": "table",
+					"caption": "Starting Magic Items by Tier",
+					"colStyles": [
+						"text-center col-1-2",
+						"text-center col-1-2",
+						"text-center col-1-2",
+						"text-center col-1-2",
+						"text-center col-1-2",
+						"text-center col-1-2",
+						"text-center col-1-2",
+						"text-center col-1-2",
+						"text-center col-1-2",
+						"text-center col-1-2"
+					],
+					"colLabels": [
+						"",
+						"Cmn.",
+						"Uncmn.",
+						"",
+						"Rare",
+						"",
+						"V. rare",
+						"",
+						"Lg.dary",
+						""
+					],
+					"rows": [
+						[
+							"Tier",
+							"Minor",
+							"Minor",
+							"Major",
+							"Minor",
+							"Major",
+							"Minor",
+							"Major",
+							"Minor",
+							"Major"
+						],
+						[
+							"1-4",
+							"2",
+							"2",
+							"1",
+							"0",
+							"0",
+							"0",
+							"0",
+							"0",
+							"0"
+						],
+						[
+							"5-10",
+							"6",
+							"2",
+							"2",
+							"1",
+							"0",
+							"0",
+							"0",
+							"0",
+							"0"
+						],
+						[
+							"11-16",
+							"16",
+							"14",
+							"7",
+							"6",
+							"1",
+							"1",
+							"0",
+							"0",
+							"0"
+						],
+						[
+							"17-19",
+							"19",
+							"20",
+							"8",
+							"15",
+							"3",
+							"5",
+							"2",
+							"1",
+							"0"
+						],
+						[
+							"20",
+							"19",
+							"20",
+							"8",
+							"19",
+							"4",
+							"12",
+							"4",
+							"4",
+							"1"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"name": "Starting Money by Tier",
+					"caption": "Starting Money by Tier",
+					"colLabels": [
+						"Tier",
+						"GP"
+					],
+					"colStyles": [
+						"text-center col-3",
+						"text-center col-9"
+					],
+					"rows": [
+						[
+							"1-4",
+							"1,000 gp"
+						],
+						[
+							"5-10",
+							"13,000 gp"
+						],
+						[
+							"11-16",
+							"110,000 gp"
+						],
+						[
+							"17+",
+							"510,000 gp"
+						]
+					]
+				},
+				{
+					"name": "Wealth per Level",
+					"entries": [
+						"Alternatively, use the following table as a reference for the starting wealth of the party at each specific level.",
+						{
+							"type": "table",
+							"name": "Starting Wealth per Level",
+							"caption": "Starting Wealth per Level",
+							"colStyles": [
+								"text-center col-1-1",
+								"text-center col-1-1",
+								"text-center col-1-1",
+								"text-center col-1-1",
+								"text-center col-1-1",
+								"text-center col-1-1",
+								"text-center col-1-1",
+								"text-center col-1-1",
+								"text-center col-1-1",
+								"text-center col-1-1"
+							],
+							"colLabels": [
+								"",
+								"Cmn.",
+								"Uncmn.",
+								"",
+								"Rare",
+								"",
+								"V. rare",
+								"",
+								"Lg.dary",
+								""
+							],
+							"rows": [
+								[
+									"Lv",
+									"Minor",
+									"Minor",
+									"Major",
+									"Minor",
+									"Major",
+									"Minor",
+									"Major",
+									"Minor",
+									"Major"
+								],
+								[
+									"1",
+									"2",
+									"2",
+									"1",
+									"0",
+									"0",
+									"0",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"2",
+									"3",
+									"2",
+									"1",
+									"0",
+									"0",
+									"0",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"3",
+									"4",
+									"2",
+									"2",
+									"1",
+									"0",
+									"0",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"4",
+									"5",
+									"2",
+									"2",
+									"1",
+									"0",
+									"0",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"5",
+									"6",
+									"2",
+									"2",
+									"1",
+									"0",
+									"0",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"6",
+									"8",
+									"4",
+									"3",
+									"2",
+									"0",
+									"0",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"7",
+									"9",
+									"6",
+									"4",
+									"3",
+									"0",
+									"0",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"8",
+									"11",
+									"8",
+									"5",
+									"4",
+									"1",
+									"1",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"9",
+									"13",
+									"10",
+									"5",
+									"4",
+									"1",
+									"1",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"10",
+									"14",
+									"12",
+									"6",
+									"5",
+									"1",
+									"1",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"11",
+									"16",
+									"14",
+									"7",
+									"6",
+									"1",
+									"1",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"12",
+									"17",
+									"15",
+									"7",
+									"8",
+									"1",
+									"2",
+									"0",
+									"0",
+									"0"
+								],
+								[
+									"13",
+									"17",
+									"16",
+									"7",
+									"9",
+									"2",
+									"2",
+									"1",
+									"0",
+									"0"
+								],
+								[
+									"14",
+									"18",
+									"17",
+									"8",
+									"11",
+									"2",
+									"3",
+									"1",
+									"1",
+									"0"
+								],
+								[
+									"15",
+									"18",
+									"18",
+									"8",
+									"12",
+									"2",
+									"4",
+									"1",
+									"1",
+									"0"
+								],
+								[
+									"16",
+									"19",
+									"19",
+									"8",
+									"14",
+									"3",
+									"4",
+									"2",
+									"1",
+									"0"
+								],
+								[
+									"17",
+									"19",
+									"20",
+									"8",
+									"15",
+									"3",
+									"5",
+									"2",
+									"1",
+									"0"
+								],
+								[
+									"18",
+									"19",
+									"20",
+									"8",
+									"16",
+									"3",
+									"7",
+									"3",
+									"2",
+									"0"
+								],
+								[
+									"19",
+									"19",
+									"20",
+									"8",
+									"18",
+									"4",
+									"10",
+									"3",
+									"3",
+									"1"
+								],
+								[
+									"20",
+									"19",
+									"20",
+									"8",
+									"19",
+									"4",
+									"12",
+									"4",
+									"4",
+									"1"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Magic Item Price",
+			"page": 1,
+			"source": "OperazioneGalloRuspante",
+			"entries": [
+				"A Minor Tier magic item's asking price is usually in the lower range of its rarity, a Major Tier is in the upper range. Use the following table as a reference.",
+				{
+					"type": "table",
+					"caption": "Magic Item Price*",
+					"footnotes": [
+						"* halved for consumables"
+					],
+					"colLabels": [
+						"Rarity",
+						"",
+						"Random",
+						"",
+						"",
+						"Minor Tier",
+						"",
+						"Average",
+						"",
+						"Major Tier",
+						""
+					],
+					"colStyles": [
+						"text-center col-2",
+						"text-center col-0",
+						"text-center col-4",
+						"text-center col-0",
+						"text-center col-0",
+						"text-center col-2",
+						"text-center col-0",
+						"text-center col-2",
+						"text-center col-0",
+						"text-center col-2",
+						"text-center col-0"
+					],
+					"rows": [
+						[
+							"Common",
+							"",
+							"{@dice (1d6 + 1) × 10}  gp",
+							"",
+							"",
+							"20 gp",
+							"",
+							"45 gp",
+							"",
+							"70 gp",
+							""
+						],
+						[
+							"Uncommon",
+							"",
+							"{@dice 1d6 × 100} gp",
+							"",
+							"",
+							"100 gp",
+							"",
+							"350 gp",
+							"",
+							"600 gp",
+							""
+						],
+						[
+							"Rare",
+							"",
+							"{@dice 2d10 × 1,000} gp",
+							"",
+							"",
+							"2,000 gp",
+							"",
+							"11,000 gp",
+							"",
+							"20,000 gp",
+							""
+						],
+						[
+							"Very rare",
+							"",
+							"{@dice (1d4 + 1) × 10,000} gp",
+							"",
+							"",
+							"20,000 gp",
+							"",
+							"35,000 gp",
+							"",
+							"50,000 gp",
+							""
+						],
+						[
+							"Legendary",
+							"",
+							"{@dice 2d6 × 25,000} gp",
+							"",
+							"",
+							"50,000 gp",
+							"",
+							"175,000 gp",
+							"",
+							"300,000 gp",
+							""
+						]
+					]
+				}
+			]
+		},
+		{
+			"type": "section",
+			"name": "Scroll Prices; Scribing Scrolls Cost",
+			"page": 1,
+			"source": "OperazioneGalloRuspante",
+			"entries": [
+				"Use the following table to determine the asking price and scribing cost for spell scrolls.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Rarity",
+						"",
+						"Level",
+						"Asking Price",
+						"",
+						"Scribe Cost",
+						"",
+						"Scribing Time",
+						""
+					],
+					"colStyles": [
+						"text-center col-2",
+						"text-center col-0",
+						"text-center col-1",
+						"text-center col-3",
+						"text-center col-0",
+						"text-center col-3",
+						"text-center col-0",
+						"text-center col-3",
+						"text-center col-0"
+					],
+					"rows": [
+						[
+							"Common",
+							"",
+							"0",
+							"50 gp",
+							"",
+							"40 gp",
+							"",
+							"1 day",
+							""
+						],
+						[
+							"",
+							"",
+							"1",
+							"150 gp",
+							"",
+							"100 gp",
+							"",
+							"1 day",
+							""
+						],
+						[
+							"",
+							"",
+							"2",
+							"300 gp",
+							"",
+							"200 gp",
+							"",
+							"2 days",
+							""
+						],
+						[
+							"Uncommon",
+							"",
+							"3",
+							"500 gp",
+							"",
+							"340 gp",
+							"",
+							"3 days",
+							""
+						],
+						[
+							"Rare",
+							"",
+							"4",
+							"1,000 gp",
+							"",
+							"700 gp",
+							"",
+							"4 days",
+							""
+						],
+						[
+							"",
+							"",
+							"5",
+							"2,000 gp",
+							"",
+							"1,400 gp",
+							"",
+							"5 days",
+							""
+						],
+						[
+							"Very rare",
+							"",
+							"6",
+							"10,000 gp",
+							"",
+							"6,700 gp",
+							"",
+							"6 days",
+							""
+						],
+						[
+							"",
+							"",
+							"7",
+							"20,000 gp",
+							"",
+							"14,000 gp",
+							"",
+							"7 days",
+							""
+						],
+						[
+							"",
+							"",
+							"8",
+							"30,000 gp",
+							"",
+							"20,000 gp",
+							"",
+							"8 days",
+							""
+						],
+						[
+							"Legendary",
+							"",
+							"9",
+							"50,000 gp",
+							"",
+							"34,000 gp",
+							"",
+							"9 days",
+							""
+						]
+					]
+				}
+			]
+		}
+	],
+	"class": [
+		{
+			"name": "Factotum",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"dex",
+				"int"
+			],
+			"spellcastingAbility": "int",
+			"casterProgression": "1/2",
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"shields"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"athletics",
+								"acrobatics",
+								"sleight of hand",
+								"stealth",
+								"arcana",
+								"history",
+								"investigation",
+								"nature",
+								"religion",
+								"animal handling",
+								"insight",
+								"medicine",
+								"perception",
+								"survival",
+								"deception",
+								"intimidation",
+								"performance",
+								"persuasion"
+							],
+							"count": 4
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} and a {@item shield|phb} or (b) any two {@filter martial weapons|items|source=phb|category=basic|type=martial weapon}",
+					"(a) a {@item longbow|phb} and 20 {@item arrows|phb} or (b) 5 {@item javelins|phb}",
+					"(a) an {@item explorer's pack|phb} or (b) a {@item dungeoneer's pack|phb}",
+					"{@item Leather armor|phb} and {@item thieve's tools|phb}"
+				],
+				"goldAlternative": "{@dice 5d4 × 10|5d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							"shield|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponMartial"
+							},
+							{
+								"equipmentType": "weaponMartial"
+							}
+						]
+					},
+					{
+						"a": [
+							"longbow|phb",
+							{
+								"item": "arrow|phb",
+								"quantity": 20
+							}
+						],
+						"b": [
+							{
+								"item": "javelin|phb",
+								"quantity": 5
+							}
+						]
+					},
+					{
+						"a": [
+							"explorers pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack|phb"
+						]
+					},
+					{
+						"_": [
+							"Leather armor|phb",
+							"thieve's tools|phb"
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"int": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light"
+					],
+					"weapons": [
+						"simple"
+					]
+				}
+			},
+			"classFeatures": [
+				"Factotum Epiphany|Factotum|OGR|1",
+				"Cunning Insight|Factotum|OGR|1",
+				"Cunning Knowledge|Factotum|OGR|1",
+				"Arcane Dilettante|Factotum|OGR|2",
+				"Expertise|Factotum|OGR|2",
+				"Brains over Brawn|Factotum|OGR|3",
+				"Cunning Defense|Factotum|OGR|3",
+				{
+					"classFeature": "Factotum Focus|Factotum|OGR|3",
+					"gainSubclassFeature": true
+				},
+				"Cunning Strike|Factotum|OGR|4",
+				"Ability Score Improvement|Factotum|OGR|4",
+				"Extra Attack|Factotum|OGR|5",
+				"Opportunistic Piety|Factotum|OGR|5",
+				"Ability Score Improvement|Factotum|OGR|6",
+				{
+					"classFeature": "Factotum Focus Feature|Factotum|OGR|7",
+					"gainSubclassFeature": true
+				},
+				"Cunning Surge|Factotum|OGR|8",
+				"Ability Score Improvement|Factotum|OGR|10",
+				"Cunning Breach|Factotum|OGR|11",
+				{
+					"classFeature": "Factotum Focus Feature|Factotum|OGR|11",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Factotum|OGR|12",
+				"Cunning Dodge|Factotum|OGR|13",
+				"Improved Cunning Defense|Factotum|OGR|14",
+				{
+					"classFeature": "Factotum Focus Feature|Factotum|OGR|15",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Factotum|OGR|16",
+				{
+					"classFeature": "Factotum Focus Feature|Factotum|OGR|18",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Factotum|OGR|19",
+				"Cunning Brilliance|Factotum|OGR|20"
+			],
+			"classTableGroups": [
+				{
+					"type": "table",
+					"name": "Test table",
+					"colLabels": [
+						"Spells Prepared",
+						"{@filter Spells Known|spells|class=Wizard;Bard;Sorcerer|level=1;2;3;4;5}",
+						"Epiphany Points",
+						"Sneak Attack"
+					],
+					"rows": [
+						[
+							"─",
+							"─",
+							1,
+							"─"
+						],
+						[
+							1,
+							"{@filter 1st|spells|level=1|class=Wizard;Bard;Sorcerer}",
+							2,
+							"─"
+						],
+						[
+							2,
+							"{@filter 1st|spells|level=1|class=Wizard;Bard;Sorcerer}",
+							3,
+							"─"
+						],
+						[
+							2,
+							"{@filter 1st|spells|level=1|class=Wizard;Bard;Sorcerer}",
+							4,
+							"1d6"
+						],
+						[
+							3,
+							"{@filter 2nd|spells|level=2|class=Wizard;Bard;Sorcerer}",
+							5,
+							"1d6"
+						],
+						[
+							3,
+							"{@filter 2nd|spells|level=2|class=Wizard;Bard;Sorcerer}",
+							6,
+							"1d6"
+						],
+						[
+							4,
+							"{@filter 2nd|spells|level=2|class=Wizard;Bard;Sorcerer}",
+							7,
+							"2d6"
+						],
+						[
+							4,
+							"{@filter 2nd|spells|level=2|class=Wizard;Bard;Sorcerer}",
+							8,
+							"2d6"
+						],
+						[
+							5,
+							"{@filter 3rd|spells|level=3|class=Wizard;Bard;Sorcerer}",
+							9,
+							"2d6"
+						],
+						[
+							5,
+							"{@filter 3rd|spells|level=3|class=Wizard;Bard;Sorcerer}",
+							10,
+							"2d6"
+						],
+						[
+							6,
+							"{@filter 3rd|spells|level=3|class=Wizard;Bard;Sorcerer}",
+							11,
+							"3d6"
+						],
+						[
+							6,
+							"{@filter 3rd|spells|level=3|class=Wizard;Bard;Sorcerer}",
+							12,
+							"3d6"
+						],
+						[
+							7,
+							"{@filter 4th|spells|level=4|class=Wizard;Bard;Sorcerer}",
+							13,
+							"3d6"
+						],
+						[
+							7,
+							"{@filter 4th|spells|level=4|class=Wizard;Bard;Sorcerer}",
+							14,
+							"3d6"
+						],
+						[
+							8,
+							"{@filter 4th|spells|level=4|class=Wizard;Bard;Sorcerer}",
+							15,
+							"4d6"
+						],
+						[
+							8,
+							"{@filter 4th|spells|level=4|class=Wizard;Bard;Sorcerer}",
+							16,
+							"4d6"
+						],
+						[
+							9,
+							"{@filter 5th|spells|level=5|class=Wizard;Bard;Sorcerer}",
+							17,
+							"4d6"
+						],
+						[
+							9,
+							"{@filter 5th|spells|level=5|class=Wizard;Bard;Sorcerer}",
+							18,
+							"4d6"
+						],
+						[
+							10,
+							"{@filter 5th|spells|level=5|class=Wizard;Bard;Sorcerer}",
+							19,
+							"5d6"
+						],
+						[
+							10,
+							"{@filter 5th|spells|level=5|class=Wizard;Bard;Sorcerer}",
+							20,
+							"5d6"
+						]
+					]
+				}
+			],
+			"subclassTitle": "Factotum Focus",
+			"subclasses": [
+				{
+					"name": "Cipher Mage",
+					"shortName": "Cipher Mage",
+					"source": "OGR",
+					"page": 2,
+					"subclassFeatures": [
+						"Arcane Aptitude|Factotum|OGR|Cipher Mage|OGR|3",
+						"Magical Trinketry|Factotum|OGR|Cipher Mage|OGR|3",
+						"Improvised Attunement|Factotum|OGR|Cipher Mage|OGR|7",
+						"Borrowed Attunement|Factotum|OGR|Cipher Mage|OGR|11",
+						"Improved Magical Trinketry|Factotum|OGR|Cipher Mage|OGR|15",
+						"Copycast Trinket|Factotum|OGR|Cipher Mage|OGR|18"
+					]
+				}
+			],
+			"fluff": [
+				{
+					"name": "Factotum",
+					"type": "section",
+					"entries": [
+						"A tiefling rummages through a sack hanging on his belt and ties together a pair of burnt sticks with a silk thread while mumbling half-forgotten words under his breath. With a flick of his wrist and a whistle between his lips, the tip of the jury-rigged apparatus lights up with a dim flame, ready for use.",
+						"A dwarf sits cross-legged in front of a paneled wall, tools in hand humming a tune. There is a click, a knock, a rumble. A small hole opens in the wall and a poison-tipped needle falls from the hole, harmless. She exclaims her success with a cry for joy.",
+						"A tabaxi parades through the tournament, with armor painted all colours of the rainbow and a mismatch of weapons on his back. In one fight he duels with grace and wit, rapier in hand; in another he swings a heavy maul with the ferocity of a barbarian. In the last match he wrestles a half-ogre to the ground with his bare hands. When the crowd sings a confused cheer, he flourishes with a bow.",
+						{
+							"type": "entries",
+							"name": "Skill Monkey",
+							"entries": [
+								"You are a practitioner of many arts; a polymath. While some people focus on their martial skills or magical learnings, you cast a wide net. Some may argue that a wide array of skills narrows your focus, you argue that having every tool available is better than having one.",
+								"Factotums are people that have learned as many skills and abilities as they possibly can, and journey into the unknown to widen that array of knowledge they build. Most factotums are capable of spellcasting due to the spread of their skills but they supplement this with the ability to create and find magical trinkets that replicate magic for ease of access."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "A Moment of Inspiration",
+							"entries": [
+								"Factotum have a core set of abilities they rely on but can focus in some things they've memorized in order to fulfill a specific task. Some factotums core abilities may lay in martial combat but in moments of inspiration, they may manifest the ability to read ancient languages or pick locks by scouring through their memories in an instant."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Factotum",
+							"entries": [
+								"As you build your factotum, think about how they gained all their skills. Did they simply have no focus and learned a variety of skills, or are they are savant and wanted to broaden their horizons as widely as possible.",
+								"Think about how and where they learned different skills and who taught them what they know. Are they self-taught?",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"You can make a factotum quickly by following these suggestions. First, make Dexterity your highest ability score. Your next highest should be Intelligence, and then Constitution. Second, pick the criminal or urchin background."
+									]
+								}
+							]
+						}
+					],
+					"page": 2,
+					"source": "OGR"
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Factotum Epiphany",
+			"source": "OGR",
+			"page": 2,
+			"srd": true,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 1,
+			"entries": [
+				"The factotum is a dabbler, a professional explorer who plunders a wide variety of fields to find the tools they need to survive. They read through tomes of arcane magic to gain a basic understanding of spells. They offer prayers to a variety of deities to gain their blessings. They observe warrior stances and exercises to understand the art of fighting. But while a factotum learns many paths, they master none of them. Rather than train in a given field, they master all the basics and manages to pull out something useful when the situation is desperate enough.",
+				"To represent this seemingly random body of knowledge, a factotum gains Epiphany Points that they can spend to activate their abilities. You have a number of Epiphany points shown on the Factotum class table to spend. This pool of points refills when you finish a short or long rest."
+			]
+		},
+		{
+			"name": "Cunning Insight",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 1,
+			"entries": [
+				"Once per turn when you make an attack roll or damage roll on your turn, you can spend 1 Epiphany Point to gain a bonus to the roll equal to your Intelligence modifier. You can do this before or after you roll, but before the results are determined.",
+				"You can apply this bonus to a saving throw you make as a reaction."
+			]
+		},
+		{
+			"name": "Cunning Knowledge",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 1,
+			"entries": [
+				"When you make an ability check, you can choose to gain a bonus to that check equal to your factotum level by expending 1 Epiphany Point as a bonus action. If you use this feature on a skill with which you are not proficient, the bonus equals half your Factotum level (rounded up) instead.",
+				"Each ability check in which you’re not proficient can only be granted this bonus once per long rest."
+			]
+		},
+		{
+			"name": "Arcane Dilettante",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 2,
+			"entries": [
+				"You acquire a vague understanding of magic. You know that with a few weird hand gestures and an array of grunts and bizarre words, you can conjure up something that looks like a spell.",
+				{
+					"type": "entries",
+					"name": "Spellcasting",
+					"entries": [
+						"Your understanding of magic is tenuous at best. You probably didn't study at an arcane academy or tutor under an archmage. Instead, you watched wizards and sorcerers at work and learned how to mimic what they did."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Preparing and Casting Spells",
+					"entries": [
+						"At the end of each short rest, you can prepare a number of spells from the {@filter Bard, Sorcerer, and Wizard spell lists|spells|level=1;2;3;4;5|class=wizard;sorcerer;bard} based on your Factotum level. You can prepare one spell at 2nd level, and you can prepare additional spells at higher levels. You can select any bard/sorcerer/wizard spell up to that level, but you can prepare only one spell of your maximum level unless you are below 5th level.",
+						"To cast a spell, you must expend Epiphany points equal to its spell level.",
+						"Each spell you can prepare can only be cast once per short rest. For example, you are a 7th-level factotum, so you have 3 1st level spells and one 2nd level spell prepared; you have {@spell scorching ray}, {@spell chaos bolt|XGE}, {@spell magic missile}, and {@spell mage armor} prepared. You can only cast {@spell scorching ray} once for 2 Epiphany points before you need to reprepare it after your next short rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Casting Spells at Higher Levels",
+					"entries": [
+						"You can cast spells at higher levels, up to your maximum level (as shown in the Factotum table), but you have to expend Epiphany points equal to the effective spell level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spellcasting Ability",
+					"entries": [
+						"Intelligence is your spellcasting ability for your Factotum spell, since you need to observe and accurately mimic other spellcasters in order to understand what, exactly, they are doing with their hands and mouth.",
+						"You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a factotum spell you cast and when making an attack roll with one.",
+						{
+							"type": "abilityDc",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						},
+						{
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"int"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Expertise",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 2,
+			"entries": [
+				"Choose two of your skill or tool proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency."
+			]
+		},
+		{
+			"name": "Brains over Brawn",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 3,
+			"entries": [
+				"You can use your Intelligence modifier instead of your Strength modifier on Athletics checks, and instead of your Dexterity modifier on Acrobatics, Initiative, Sleight of Hand, and Stealth checks."
+			]
+		},
+		{
+			"name": "Cunning Defense",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 3,
+			"entries": [
+				"You can study your opponents and learn to anticipate their attacks. When a creature you can see attacks you, you can spend 1 Epiphany point as a reaction to gain a bonus to your AC equal to your Intelligence modifier until the start of your next turn."
+			]
+		},
+		{
+			"name": "Factotum Focus",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 3,
+			"entries": [
+				"You choose a Factotum focus, shaping the path you tend to mimic. Choose between Cipher Mage and Iron Adept, both of which are detailed at the end of this class description.",
+				"The archetype you choose grants you features at 3rd level and again at 7th, 11th, 15th, and 18th level"
+			]
+		},
+		{
+			"name": "Cunning Strike",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 4,
+			"entries": [
+				"With a quick study of a vulnerable opponent's defenses, you can spot the precise area you need to hit to score a telling blow. You can spend 1 Epiphany point to gain {@dice 1d6} points of sneak attack damage. You must follow the normal rules of {@classFeature sneak attack|Rogue||1} from the Rogue class. You can spend this point before or after you roll, but before results are determined.",
+				"The damage for this feature improves at certain levels ({@dice 2d6} at 7th level, {@dice 3d6} at 11th level, {@dice 4d6} at 15th level, and {@dice 5d6} at 19th level)."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 5,
+			"entries": [
+				"When you take the Attack action on your turn, you can make two attacks, instead of one."
+			]
+		},
+		{
+			"name": "Opportunistic Piety",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 5,
+			"entries": [
+				"Factotums are legendary for the number of holy symbols, lucky trinkets, and blessed items they keep handy. As the saying goes, there are no atheists in the dungeon. You can spend 1 Epiphany point to channel divine energy as an action. You can channel this energy to heal injuries, harm undead, or turn undead. You can use this feature a number of times equal to your Proficiency Bonus per long rest.",
+				{
+					"type": "list",
+					"items": [
+						"If you use this ability to heal injuries, you have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your Factotum level × 3.",
+						"If you use this ability to injure undead, you must hit with a melee spell attack. If you hit, you deal radiant damage equal to twice your factotum level + your Intelligence modifier.",
+						"If you use this ability to {@classFeature turn undead|Cleric||2}, you act as a {@class cleric} of a level equal to your factotum level. The saving throw for this effect uses your Spellcasting save DC."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 6,
+			"entries": [
+				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Factotum Focus Feature",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 7,
+			"entries": [
+				"At 7th level, you gain a feature granted by your Factotum Focus."
+			]
+		},
+		{
+			"name": "Cunning Surge",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 8,
+			"entries": [
+				"You learn how to push yourself beyond your limits when needed. By spending 3 Epiphany points, you gain an extra action on top of your normal action and possible bonus action.",
+				"Once you use this feature, you can't use it again until you finish a long or short rest."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 10,
+			"entries": [
+				"When you reach 10th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Cunning Breach",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 11,
+			"entries": [
+				"Your broad knowledge allows you to study an opponent and gain a brief flash of insight to breach their defenses. By spending 2 Epiphany points as a part of your {@action attack}, you can ignore one damage resistance of your choice of a creature you can see until the start of your next turn."
+			]
+		},
+		{
+			"name": "Factotum Focus Feature",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 11,
+			"entries": [
+				"At 11th level, you gain a feature granted by your Factotum Focus."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 12,
+			"entries": [
+				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Cunning Dodge",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 13,
+			"entries": [
+				"Your luck, reflexes, and intuition allow you to avoid an attack or spel. When an attacker that you can see hits you with an {@action attack}, you can spend 2 Epiphany Points as a reaction to halve the attack's damage against you. If you take damage that would reduce you to 0 hit points, you can instead spend 4 Epiphany points as a reaction to drop to 1 hit point instead.",
+				"You almost dodge out of the way, take cover from a spell, or otherwise escape the brunt of the damage.",
+				"Once you use this ability, you can't use it again until you finish a long or short rest."
+			]
+		},
+		{
+			"name": "Improved Cunning Defense",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 14,
+			"entries": [
+				"Your armor class equals 10 + your Dexterity modifier + your Intelligence modifier when you are not wearing medium or heavy armor."
+			]
+		},
+		{
+			"name": "Factotum Focus Feature",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 15,
+			"entries": [
+				"At 15th level, you gain a feature granted by your Factotum Focus."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 16,
+			"entries": [
+				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Factotum Focus Feature",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain a feature granted by your Factotum Focus."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 19,
+			"entries": [
+				"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+			]
+		},
+		{
+			"name": "Cunning Brilliance",
+			"source": "OGR",
+			"page": 2,
+			"srd": false,
+			"className": "Factotum",
+			"classSource": "OGR",
+			"level": 20,
+			"entries": [
+				"You become the ultimate jack of all trades. Your sharp mind and keen sense of surroundings allow you to duplicate almost any ability you witness. At the end of each long rest, choose three class abilities (they don't need to be from the same class). Each ability must be available to a character of that class at 18th level or lower.",
+				"By spending 10 Epiphany points as an action, you gain the benefits and drawbacks of one of the chosen abilities for 1 minute. You can't gain the Spellcasting or Pact Magic feature using the ability.",
+				"Once you use this feature, you can't use it again until you finish a long rest.",
+				"If a feature you select has a point cost requirement, such as a {@class Monk}'s {@subclassFeature quivering palm|monk||open hand||17} ability, you must spend Epiphany Points equal to the feature's normal point cost to activate it."
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Arcane Aptitude",
+			"source": "OGR",
+			"className": "Factotum",
+			"classSource": "OGR",
+			"subclassShortName": "Cipher Mage",
+			"subclassSource": "OGR",
+			"level": 3,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Prepared Spells",
+					"entries": [
+						"You have more aptitude than the average Factotum in the arcane arts. The number of spells you can prepare is equal to your Intelligence modifier + half your Factotum level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cantrips",
+					"entries": [
+						"You also learn two {@filter cantrips|spells|level=0|class=wizard;sorcerer;bard} of your choice from the {@filter bard, sorcerer, and wizard spell lists|spells|class=wizard;sorcerer;bard}. You learn an additional cantrip of your choice from the same spell lists at 10th level."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spell Slots",
+					"entries": [
+						"Expending Epiphany Points to cast spells now effectively grants you spell slots of the corresponding level. However, you can’t benefit from effects that would make you regain spell slots."
+					]
+				}
+			]
+		},
+		{
+			"name": "Magical Trinketry",
+			"source": "OGR",
+			"className": "Factotum",
+			"classSource": "OGR",
+			"subclassShortName": "Cipher Mage",
+			"subclassSource": "OGR",
+			"level": 3,
+			"entries": [
+				"You have begun to develop your skills into temporary magical items. You don't possess the knowledge or patience required for artificing, but you have the skill for it. During a short rest, you can cobble together a trinket that can replicate cantrips.",
+				"You can have one magical trinket at a time. Making a new one causes the previous one to fall apart.",
+				"Choose one {@filter cantrip|spells|level=0} whose casting you have witnessed. You can extrapolate the casting mechanics for that spell into an item such as a ring, wand, or rod. This item you make contains that cantrip and you can cast that cantrip using your Intelligence. If a creature other than you tries to cast the cantrip, the item falls apart.",
+				"At 6th level, you can apply your Intelligence modifier to the damage rolls of the cantrip contained in the trinket."
+			]
+		},
+		{
+			"name": "Improvised Attunement",
+			"source": "OGR",
+			"className": "Factotum",
+			"classSource": "OGR",
+			"subclassShortName": "Cipher Mage",
+			"subclassSource": "OGR",
+			"level": 7,
+			"entries": [
+				"You can {@book attune|DMG|7|Attunement} to magical items even if you don't meet the prerequisites for attuning to the item."
+			]
+		},
+		{
+			"name": "Borrowed Attunement",
+			"source": "OGR",
+			"className": "Factotum",
+			"classSource": "OGR",
+			"subclassShortName": "Cipher Mage",
+			"subclassSource": "OGR",
+			"level": 11,
+			"entries": [
+				"You can use the properties of a magical item you touch without having to attune to it by spending 1 Epiphany point as an action. ",
+				"If the property is passive, such as the magical qualities of {@item Gauntlets of Ogre Power}, you gain the benefits of the item for 1 minute. If the item has an activated ability that requires charges, such as a {@item Wand of Magic Missiles}, you can use that ability at its lowest power as an action on each of your turns for 1 minute by spending Epiphany Points equal to the charge cost.",
+				"If the item is being worn or carried by an unwilling creature, you must make a melee spell attack to gain its benefits. You can only borrow the attunement of 1 item at a time.",
+				"Each magic item can be targeted by this effect once per short rest."
+			]
+		},
+		{
+			"name": "Improved Magical Trinketry",
+			"source": "OGR",
+			"className": "Factotum",
+			"classSource": "OGR",
+			"subclassShortName": "Cipher Mage",
+			"subclassSource": "OGR",
+			"level": 15,
+			"entries": [
+				"You can now make trinkets containing {@filter 1st-level|spells|level=1} and  {@filter 2st-level|spells|level=2} spells from any class's spell list at the end of each long rest. You can have up to 2 Improved Magical Trinkets active at a time (in addition to your regular magical trinket). Each Improved Magical Trinket can be tapped to cast a spell a number of times equal to your Intelligence Modifier each long rest."
+			]
+		},
+		{
+			"name": "Copycast Trinket",
+			"source": "OGR",
+			"className": "Factotum",
+			"classSource": "OGR",
+			"subclassShortName": "Cipher Mage",
+			"subclassSource": "OGR",
+			"level": 18,
+			"entries": [
+				"You can make a Copycast Trinket at the end of a long rest. When a creature you can see within 120 feet of you casts a spell, you can spend 4 Epiphany points as a reaction to replicate the spell and cast it as part of the same reaction. The spell doesn't need to be on your spell list or of a level you can prepare, but you still have to provide the appropriate components",
+				"Once you use the Copycast Trinket to replicate and cast a spell, it breaks."
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Eregast's Lantern",
+			"source": "OGR",
+			"page": 3,
+			"rarity": "artifact",
+			"reqAttune": "by an artificer",
+			"wondrous": true,
+			"focus": [
+				"Artificer"
+			],
+			"bonusSpellAttack": "+2",
+			"recharge": "dawn",
+			"charges": 3,
+			"entries": [
+				"This rusty lantern was created by Eregast, to be buried in his Mausoleum, deep in the jungles of Xen’Drik, after his death. The lantern appears dim and opaque, and looking inside it’s hard to tell if it’s even lit.",
+				{
+					"type": "entries",
+					"name": "Dormant",
+					"entries": [
+						"While holding Eregast’s Lantern with one hand, or keeping it secured to your belt, or to a rod or staff you’re holding, you gain a +1 bonus to spell attack rolls.",
+						"The lantern has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cause one of the following effects:",
+						{
+							"type": "list",
+							"items": [
+								"You cast one of your artificer spells with a casting time of 1 action or less with a +1 bonus to its DC (1 charge). You still expend the corresponding spell slot normally.",
+								"You imbue the lantern with one of your artificer infusions. This doesn’t count against your maximum number of infusions, but follows the normal rules for infusing an item otherwise (3 charges). The lantern doesn’t recover these charges until you end the infusion."
+							]
+						},
+						"The lantern regains 1d2 + 1 expended charges daily at dawn."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Awakened",
+					"entries": [
+						"When Eregast’s Lantern reaches an awakened state, it gains the following properties:",
+						{
+							"type": "list",
+							"items": [
+								"The lantern’s charges increase to 6 and it regains 1d4 + 2 expended charges daily at dawn.",
+								"The bonus to spell attack rolls increases to +2."
+							]
+						},
+						"By expending its charges you can cause the following additional effects:",
+						{
+							"type": "list",
+							"items": [
+								"You cast one of your artificer spells with a casting time of 1 action or less with a +2 bonus to its DC (2 charges). You still expend the corresponding spell slot normally.",
+								"You recover one or more spell slots of a total level equal to the charges you expend (es.: 3 charges for  1 level 1 and 1 level 2 slots), to a maximum of 3 between two long rests."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Exalted",
+					"entries": [
+						"When Eregast’s Lantern  reaches an exalted state, it gains the following properties:",
+						{
+							"type": "list",
+							"items": [
+								"The lantern’s charges increase to 10 and it regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, once before the next dawn, roll a d20. On a 20, the lantern regains 1d2 + 1 charges.",
+								"The bonus to spell attack rolls increases to +3.",
+								"The lantern counts as two magic items with regard to the number of magic items you can attune to."
+							]
+						},
+						"By expending its charges you can cause the following additional effects:",
+						{
+							"type": "list",
+							"items": [
+								"You cast one of your artificer spells with a casting time of 1 action or less with a +3 bonus to its DC (3 charges). You still expend the corresponding spell slot normally.",
+								"You recover one or more spell slots of a total level equal to the charges you expend (es.: 3 charges for  1 level 1 and 1 level 2 slots), to a maximum of 5 between two long rests."
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
