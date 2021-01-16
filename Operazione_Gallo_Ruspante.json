@@ -1314,7 +1314,7 @@
 					"name": "Test table",
 					"colLabels": [
 						"Spells Prepared",
-						"{@filter Spells Known|spells|class=Wizard;Bard;Sorcerer|level=1;2;3;4;5}",
+						"Spell Level",
 						"Epiphany Points",
 						"Sneak Attack"
 					],
