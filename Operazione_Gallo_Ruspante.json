@@ -2115,6 +2115,154 @@
 				}
 			]
 		}
-
+	],
+	"background": [
+		{
+			"name": "Rogue Archaeologist",
+			"source": "OGR",
+			"page": 4,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill History}, {@skill Deception}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "{@item Cartographer's tools|phb} or {@item navigator's tools|phb}"
+						},
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "A {@item Map or Scroll Case|phb|wooden case} containing a map to a ruin or dungeon, a {@item bullseye lantern|phb}, a {@item miner's pick|phb}, a set of {@item traveler's clothes|phb}, a {@item shovel|phb}, a {@item two-person tent|phb}, a {@item trinket|phb|trinket} recovered from a dig site, and a {@item pouch|phb} containing 25 gp"
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Description",
+					"entries": [
+						"A rogue archaeologist preys on the long-lost and fallen cultures of the past by stealing and collecting their remains — their bones, their ruins, their surviving masterworks, and their tombs. Those who practice archaeology travel to the far corners of the world to root through crumbled cities and lost dungeons, digging in search of artifacts that might tell the stories of monarchs and high priests, wars and cataclysms - and fetch a high price on the black market -, often finding themselves in direct confrontation with ancient and powerful guardians and forgotten creatures."
+					]
+				},
+				{
+					"name": "Dust Digger",
+					"type": "entries",
+					"entries": [
+						"Prior to becoming an adventurer, you spent most of your young life crawling around in the dust, pilfering relics of questionable value from crypts and ruins. Though you managed to sell a few of your discoveries and earn enough coin to buy proper adventuring gear, you have held onto an item that has great emotional value to you. Roll on the Signature Item table to see what you have, or choose an item from the table.",
+						{
+							"type": "table",
+							"caption": "Signature Item",
+							"colLabels": [
+								"d8",
+								"Item"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"{@item pole (10-foot)|phb|10-foot pole}"
+								],
+								[
+									"2",
+									"{@item Crowbar|phb}"
+								],
+								[
+									"3",
+									"Hat"
+								],
+								[
+									"4",
+									"{@item Hooded lantern|phb}"
+								],
+								[
+									"5",
+									"Medallion"
+								],
+								[
+									"6",
+									"{@item Shovel|phb}"
+								],
+								[
+									"7",
+									"{@item Sledgehammer|phb}"
+								],
+								[
+									"8",
+									"{@item Whip|phb}"
+								]
+							]
+						}
+					]
+				},
+				{
+					"name": "Feature: Historical Knowledge",
+					"type": "entries",
+					"entries": [
+						"When you enter a ruin or dungeon, you can correctly ascertain its original purpose and determine its builders, whether those were dwarves, elves, humans, yuan-ti, or some other known race. In addition, you can determine the monetary value of art objects more than a century old."
+					],
+					"data": {
+						"isFeature": true
+					}
+				}
+			],
+			"skillProficiencies": [
+				{
+					"history": true,
+					"deception": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"anyStandard": 1
+				}
+			],
+			"toolProficiencies": [
+				{
+					"choose": {
+						"from": [
+							"navigator's tools",
+							"cartographer's tools"
+						]
+					}
+				}
+			],
+			"startingEquipment": [
+				{
+					"_": [
+						{
+							"item": "map or scroll case|phb",
+							"displayName": "wooden case containing a map to a ruin or dungeon"
+						},
+						"bullseye lantern|phb",
+						"miner's pick|phb",
+						"traveler's clothes|phb",
+						"shovel|phb",
+						"two-person tent|phb",
+						{
+							"item": "trinket|phb",
+							"displayName": "trinket recovered from a dig site"
+						},
+						{
+							"item": "pouch|phb",
+							"containsValue": 2500
+						}
+					]
+				}
+			]
+		}
 	]
 }
