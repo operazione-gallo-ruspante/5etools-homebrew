@@ -2078,6 +2078,43 @@
 			"entries": [
 				"As an action, you can direct this hat to fly on another creature's head. This has the same effect as casting {@spell hold monster} on that creature. The DC for the saving throw is equal to Larhut's, decided by the DM."
 			]
+		},
+		{
+			"name": "Shield (worn)",
+			"source": "OGR",
+			"page": 3,
+			"ac": 2,
+			"entries": [
+				"A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+			]
+		},
+		{
+			"name": "Shield (held)",
+			"source": "OGR",
+			"page": 3,
+			"ac": 1,
+			"entries": [
+				"A held shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 1. You can benefit from only one shield at a time.",
+				"Donning and doffing a held shield requires an interaction."
+			]
+		},
+		{
+			"name": "Shield (buckler)",
+			"source": "OGR",
+			"page": 3,
+			"ac": 1,
+			"entries": [
+				"A buckler is made from wood or metal and is worn on the forearm. You can benefit from only one shield at a time.",
+				"While wearing a buckler, you can:",
+				{
+					"type": "list",
+					"items": [
+						"Use a bonus action to gain a +1 bonus to your AC (this counts as a shield) until the beginning of your next turn",
+						"Use a reaction to gain a +1 bonus to your AC (this counts as a shield) on one attack"
+					]
+				}
+			]
 		}
+
 	]
 }
