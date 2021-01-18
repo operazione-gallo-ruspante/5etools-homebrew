@@ -2076,7 +2076,18 @@
 			"reqAttune": "by a spellcaster",
 			"wondrous": true,
 			"entries": [
-				"As an action, you can direct this hat to fly on another creature's head. This has the same effect as casting {@spell hold monster} on that creature. The DC for the saving throw is equal to Larhut's, decided by the DM."
+				"As a bonus action, you can direct this hat to fly on another creature's head. The other creature makes a DC 20 Saving Throw. If it fails, this has the same effect as casting {@spell hold person} on that creature. The DC for the saving throw is 20"
+			]
+		},
+		{
+			"name": "Larhut's Glasses",
+			"source": "OGR",
+			"page": 3,
+			"rarity": "artifact",
+			"reqAttune": true,
+			"wondrous": true,
+			"entries": [
+				"As an action, you can activate the glasses to cast {@spell true seeing}. You can't use this feature again until you finish a long rest."
 			]
 		},
 		{
