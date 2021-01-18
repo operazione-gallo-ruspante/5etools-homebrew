@@ -2077,7 +2077,7 @@
 			"reqAttune": "by a spellcaster",
 			"wondrous": true,
 			"entries": [
-				"As an action, you can direct this hat to fly on another creature’s head. This has the same effect as casting {@spell hold monster} on that creature. The DC for the saving throw is equal to Larhut’s, decided by the DM."
+				"As an action, you can direct this hat to fly on another creature's head. This has the same effect as casting {@spell hold monster} on that creature. The DC for the saving throw is equal to Larhut's, decided by the DM."
 			]
 		}
 	]
