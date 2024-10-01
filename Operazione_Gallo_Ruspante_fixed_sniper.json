@@ -795,11 +795,11 @@
         "Their privileged position in battle also means they have a more comprehensive and global point of view of the battlefield, so snipers often cover the role of coordinating the actions of their allies from afar.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Sniping Tactics|Rogue||Sniper|OGR|3"
+          "subclassFeature": "Sniping Tactics|Rogue|PHB|Sniper|OGR|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Customized Weapon|Rogue||Sniper|OGR|3"
+          "subclassFeature": "Customized Weapon|Rogue|PHB|Sniper|OGR|3"
         }
       ]
     },
