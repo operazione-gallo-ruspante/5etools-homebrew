@@ -1,0 +1,1454 @@
+{
+  "_meta": {
+    "sources": [
+      {
+        "json": "OperazioneGalloRuspante",
+        "abbreviation": "OGR",
+        "full": "Operazione Gallo Ruspante",
+        "url": "",
+        "authors": ["Gallo Ruspante"],
+        "convertedBy": [],
+        "targetSchema": "1.0.0"
+      }
+    ],
+    "dateAdded": 1610541830,
+    "dateLastModified": 1610541830
+  },
+  "monster": [
+    {
+      "name": "Nabassu (Progeny of Solqommon)",
+      "source": "OperazioneGalloRuspante",
+      "page": 135,
+      "size": "M",
+      "type": {
+        "type": "fiend",
+        "tags": ["demon"]
+      },
+      "alignment": ["C", "E"],
+      "ac": [
+        {
+          "ac": 18,
+          "from": ["natural armor"]
+        }
+      ],
+      "hp": {
+        "average": 190,
+        "formula": "20d8 + 100"
+      },
+      "speed": {
+        "walk": 40,
+        "fly": 60
+      },
+      "str": 22,
+      "dex": 14,
+      "con": 21,
+      "int": 14,
+      "wis": 15,
+      "cha": 17,
+      "save": {
+        "str": "+12",
+        "dex": "+8"
+      },
+      "skill": {
+        "perception": "+8"
+      },
+      "senses": ["darkvision 60 ft."],
+      "passive": 18,
+      "resist": [
+        "cold",
+        "fire",
+        "lightning",
+        {
+          "resist": ["bludgeoning", "piercing", "slashing"],
+          "note": "from nonmagical attacks"
+        }
+      ],
+      "immune": ["poison"],
+      "conditionImmune": ["poisoned"],
+      "languages": ["Abyssal", "telepathy 120 ft."],
+      "cr": "17",
+      "trait": [
+        {
+          "name": "Demonic Shadows",
+          "entries": [
+            "The nabassu darkens the area around its body in a 10-foot radius. Nonmagical light can't illuminate this area of dim light."
+          ]
+        },
+        {
+          "name": "Devour Soul",
+          "entries": [
+            "A nabassu can eat the soul of a creature it has killed within the last hour, provided that creature is neither a construct nor an undead. The devouring requires the nabassu to be within 5 feet of the corpse for at least 10 minutes, after which it gains a number of Hit Dice ({@dice d8}s) equal to half the creature's number of Hit Dice. Roll those dice, and increase the nabassu's hit points by the numbers rolled. For every 4 Hit Dice the nabassu gains in this way, its attacks deal an extra 3 ({@dice 1d6}) damage on a hit. The nabassu retains these benefits for 6 days. A creature devoured by a nabassu can be restored to life only by a {@spell wish} spell."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The nabassu has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Magic Weapons",
+          "entries": ["The nabassu's weapon attacks are magical."]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The nabassu uses its Soul-Stealing Gaze and makes two attacks: one with its claws and one with its bite."
+          ]
+        },
+        {
+          "name": "Claws",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}17 ({@damage 2d10 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}32 ({@damage 4d12 + 6}) piercing damage plus 10 ({@damage 3d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under the vampire's control."
+          ]
+        },
+        {
+          "name": "Soul-Stealing Gaze",
+          "entries": [
+            "The nabassu targets one creature it can see within 30 feet of it. If the target can see the nabassu and isn't a construct or an undead, it must succeed on a {@dc 16} Charisma saving throw or reduce its hit point maximum by 13 ({@damage 2d12}) damage and give the nabassu an equal number of temporary hit points. This reduction lasts until the target finishes a short or long rest. The target dies if its hit point maximum is reduced to 0, and if the target is a humanoid, it immediately rises as a ghoul under the nabassu's control."
+          ]
+        }
+      ],
+      "legendaryHeader": [
+        "The nabassu can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The nabassu regains spent legendary actions at the start of its turn."
+      ],
+      "legendary": [
+        {
+          "name": "Move",
+          "entries": [
+            "The nabassu moves up to its speed without provoking opportunity attacks."
+          ]
+        },
+        {
+          "name": "Unarmed Strike",
+          "entries": ["The nabassu makes one unarmed strike."]
+        },
+        {
+          "name": "Bite (Costs 2 Actions)",
+          "entries": ["The nabassu makes one bite attack."]
+        }
+      ],
+      "environment": ["swamp", "underdark", "urban"],
+      "fluff": {
+        "name": "Nabassu",
+        "source": "MTF",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "name": "Nabassu",
+                    "type": "entries",
+                    "entries": [
+                      "The insatiable nabassus prowl the multiverse in search of souls to devour. If they think they can kill a creature and consume its soul, they attack—even if that other creature is a demon, including another nabassu."
+                    ]
+                  },
+                  {
+                    "name": "Hated Outcasts",
+                    "type": "entries",
+                    "entries": [
+                      "Demons have few rules, and the murder of other demons hardly raises an eyebrow among these fiends. The act of devouring souls is something else. For this reason, most demons shun nabassus and force them to live on the fringes of the Abyss. There, nabassus pick off weaker demons or, if the situation warrants, gather in packs to take down larger prey. Some especially powerful nabassus even search for demon lords' amulets."
+                    ]
+                  },
+                  {
+                    "name": "Demonic Infiltrators",
+                    "type": "entries",
+                    "entries": [
+                      "Whenever magic pulls demons from the Abyss to the Material Plane, nabassus try to get summoned so that they can embark on a feast of souls there. If a nabassu is summoned, it tries to break free so that it can devour the soul of its summoner and then set out to feed on the souls of whatever creatures it can catch. One way a summoner can avoid this fate is by providing a steady supply of souls to the nabassu, which can cause the demon to be cooperative—for as long as the supply lasts."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/MTF/Nabassu.jpg"
+            }
+          }
+        ]
+      },
+      "tokenUrl": "https://5e.tools/img/MTF/Nabassu.png?v=1.103.2",
+      "soundClip": "https://media-waterdeep.cursecdn.com/file-attachments/0/667/nabassu.mp3",
+      "traitTags": ["Magic Resistance", "Magic Weapons"],
+      "senseTags": ["D"],
+      "actionTags": ["Multiattack"],
+      "languageTags": ["AB", "TP"],
+      "damageTags": ["N", "P", "S"],
+      "miscTags": ["AOE", "MW"]
+    },
+    {
+      "name": "Bhanu",
+      "source": "OperazioneGalloRuspante",
+      "level": 8,
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": ["Loxodon"]
+      },
+      "alignment": ["L", "N"],
+      "ac": [
+        {
+          "ac": 19,
+          "from": ["{@item shield|phb}", "natural armor"]
+        }
+      ],
+      "hp": {
+        "formula": "8d8 + 40",
+        "average": 90
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 14,
+      "dex": 16,
+      "con": 20,
+      "int": 12,
+      "wis": 20,
+      "cha": 13,
+      "save": {
+        "str": "+2",
+        "dex": "+3",
+        "con": "+5",
+        "int": "+1",
+        "wis": "+8",
+        "cha": "+4"
+      },
+      "skill": {
+        "medicine": "+5",
+        "acrobatics": "+3",
+        "animal handling": "+5",
+        "arcana": "+1",
+        "athletics": "+2",
+        "deception": "+1",
+        "history": "+4",
+        "insight": "+8",
+        "intimidation": "+1",
+        "investigation": "+1",
+        "nature": "+1",
+        "perception": "+5",
+        "performance": "+1",
+        "persuasion": "+4",
+        "religion": "+4",
+        "sleight of hand": "+3",
+        "stealth": "+3",
+        "survival": "+5"
+      },
+      "passive": 15,
+      "languages": ["any two languages"],
+      "cr": "8",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": ["Bhanu is a level 8 spellcaster"],
+          "spells": {
+            "0": {
+              "spells": ["{@spell guidance}"]
+            },
+            "1": {
+              "spells": [
+                "{@spell bless}",
+                "{@spell cure wounds}",
+                "{@spell guiding bolt}",
+                "{@spell healing word}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell lesser restoration}",
+                "{@spell spiritual weapon}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell aura of vitality}",
+                "{@spell dispel magic}",
+                "{@spell mass healing word}"
+              ],
+              "slots": 3
+            },
+            "4": {
+              "spells": ["{@spell banishment}"],
+              "slots": 2
+            }
+          },
+          "type": "spellcasting"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Voice of Authority",
+          "entries": [
+            "If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see.",
+            "If the spell targets more than one ally, you choose the ally who can make the attack."
+          ]
+        },
+        {
+          "name": "Embodiment of the Law",
+          "entries": [
+            "If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.",
+            "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Quarterstaff",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) bludgeoning damage, plus 4 ({@damage 1d8}) radiant damage."
+          ]
+        },
+        {
+          "name": "Healing Word + Voice of Authority",
+          "entries": [
+            "If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see."
+          ]
+        },
+        {
+          "name": "Spell + Voice of Authority",
+          "entries": [
+            "If you cast a spell with a spell slot of 1st level or higher and target an ally with the spell, that ally can use their reaction immediately after the spell to make one weapon attack against a creature of your choice that you can see."
+          ]
+        }
+      ],
+      "bonus": [
+        {
+          "name": "Embodiment of the Law",
+          "entries": [
+            "1 Enchantment Spell",
+            "If you cast a spell of the enchantment school using a spell slot of 1st level or higher, you can change the spell's casting time to 1 bonus action for this casting, provided the spell's casting time is normally 1 action.",
+            "You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest."
+          ]
+        }
+      ],
+      "fluff": {
+        "name": "Priest",
+        "source": "MM",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  "Priests bring the teachings of their gods to the common folk. They are the spiritual leaders of temples and shrines and often hold positions of influence in their communities. Evil priests might work openly under a tyrant, or they might be the leaders of religious sects hidden in the shadows of good society, overseeing depraved rites. A priest typically has one or more acolytes to help with religious ceremonies and other sacred duties."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "tokenUrl": "https://5e.tools/img/MM/Priest.png?v=1.116.8",
+      "soundClip": {
+        "type": "external",
+        "url": "https://5e.tools/audio/bestiary/priest.mp3?v=1.116.8"
+      },
+      "languageTags": ["X"],
+      "damageTags": ["B", "R"],
+      "miscTags": ["MW"]
+    },
+    {
+      "name": "Kaballus",
+      "isNpc": true,
+      "source": "OperazioneGalloRuspante",
+      "level": 0,
+      "size": "S",
+      "type": {
+        "type": "humanoid",
+        "tags": ["goblinoid"]
+      },
+      "alignment": [
+        {
+          "special": "Unaligned"
+        }
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": ["{@item studded leather armor|phb}"]
+        }
+      ],
+      "hp": {
+        "formula": "5d6 + 10",
+        "average": 27
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 9,
+      "dex": 16,
+      "con": 14,
+      "int": 11,
+      "wis": 13,
+      "cha": 11,
+      "save": {
+        "dex": "+5"
+      },
+      "skill": {
+        "nature": "+2",
+        "perception": "+3",
+        "stealth": "+5",
+        "survival": "+3"
+      },
+      "senses": ["Darkvision 60 ft."],
+      "passive": 13,
+      "languages": ["Understands Common", "Goblin", "Giant and Sylvan"],
+      "cr": "2",
+      "trait": [
+        {
+          "name": "Nimble Escape",
+          "entries": [
+            "Kaballus can take the {@action Disengage} or {@action Hide} action as a bonus action on each of its turns."
+          ]
+        },
+        {
+          "name": "Keen Hearing and Smell",
+          "entries": [
+            "Kaballus has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": ["Kaballus makes two attacks."]
+        },
+        {
+          "name": "Shortsword",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+          ]
+        },
+        {
+          "name": "Shortbow",
+          "entries": [
+            "{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+          ]
+        }
+      ],
+      "traitTags": ["Keen Senses"],
+      "senseTags": ["D"],
+      "actionTags": ["Multiattack"],
+      "languageTags": ["C", "GI", "GO", "S"],
+      "damageTags": ["P", "S"],
+      "miscTags": ["MW", "RNG", "RW"]
+    }
+  ],
+  "variantrule": [
+    {
+      "name": "Starting Party Wealth; Wealth per Level",
+      "type": "section",
+      "page": 1,
+      "source": "OperazioneGalloRuspante",
+      "entries": [
+        "Use the following tables to determine parties wealth at the beginning of a new campaign. Parties will start with the appropriate magic items and a sum of money, following by the tables below:",
+        {
+          "name": "Starting Magic Items for Parties",
+          "type": "table",
+          "caption": "Starting Magic Items by Tier",
+          "colStyles": [
+            "text-center col-1-2",
+            "text-center col-1-2",
+            "text-center col-1-2",
+            "text-center col-1-2",
+            "text-center col-1-2",
+            "text-center col-1-2",
+            "text-center col-1-2",
+            "text-center col-1-2",
+            "text-center col-1-2",
+            "text-center col-1-2"
+          ],
+          "colLabels": [
+            "",
+            "Cmn.",
+            "Uncmn.",
+            "",
+            "Rare",
+            "",
+            "V. rare",
+            "",
+            "Lg.dary",
+            ""
+          ],
+          "rows": [
+            [
+              "Tier",
+              "Minor",
+              "Minor",
+              "Major",
+              "Minor",
+              "Major",
+              "Minor",
+              "Major",
+              "Minor",
+              "Major"
+            ],
+            ["1-4", "2", "2", "1", "0", "0", "0", "0", "0", "0"],
+            ["5-10", "6", "2", "2", "1", "0", "0", "0", "0", "0"],
+            ["11-16", "16", "14", "7", "6", "1", "1", "0", "0", "0"],
+            ["17-19", "19", "20", "8", "15", "3", "5", "2", "1", "0"],
+            ["20", "19", "20", "8", "19", "4", "12", "4", "4", "1"]
+          ]
+        },
+        {
+          "type": "table",
+          "name": "Starting Money by Tier",
+          "caption": "Starting Money by Tier",
+          "colLabels": ["Tier", "GP"],
+          "colStyles": ["text-center col-3", "text-center col-9"],
+          "rows": [
+            ["1-4", "500 gp"],
+            ["5-10", "13,000 gp"],
+            ["11-16", "110,000 gp"],
+            ["17+", "510,000 gp"]
+          ]
+        },
+        {
+          "name": "Wealth per Level",
+          "entries": [
+            "Alternatively, use the following table as a reference for the starting wealth of the party at each specific level.",
+            {
+              "type": "table",
+              "name": "Starting Wealth per Level",
+              "caption": "Starting Wealth per Level",
+              "colStyles": [
+                "text-center col-1-1",
+                "text-center col-1-1",
+                "text-center col-1-1",
+                "text-center col-1-1",
+                "text-center col-1-1",
+                "text-center col-1-1",
+                "text-center col-1-1",
+                "text-center col-1-1",
+                "text-center col-1-1",
+                "text-center col-1-1"
+              ],
+              "colLabels": [
+                "",
+                "Cmn.",
+                "Uncmn.",
+                "",
+                "Rare",
+                "",
+                "V. rare",
+                "",
+                "Lg.dary",
+                ""
+              ],
+              "rows": [
+                [
+                  "Lv",
+                  "Minor",
+                  "Minor",
+                  "Major",
+                  "Minor",
+                  "Major",
+                  "Minor",
+                  "Major",
+                  "Minor",
+                  "Major"
+                ],
+                ["1", "2", "1", "0", "0", "0", "0", "0", "0", "0"],
+                ["2", "3", "2", "1", "0", "0", "0", "0", "0", "0"],
+                ["3", "4", "2", "2", "1", "0", "0", "0", "0", "0"],
+                ["4", "5", "2", "2", "1", "0", "0", "0", "0", "0"],
+                ["5", "6", "2", "2", "1", "0", "0", "0", "0", "0"],
+                ["6", "8", "4", "3", "2", "0", "0", "0", "0", "0"],
+                ["7", "9", "6", "4", "3", "0", "0", "0", "0", "0"],
+                ["8", "11", "8", "5", "4", "1", "1", "0", "0", "0"],
+                ["9", "13", "10", "5", "4", "1", "1", "0", "0", "0"],
+                ["10", "14", "12", "6", "5", "1", "1", "0", "0", "0"],
+                ["11", "16", "14", "7", "6", "1", "1", "0", "0", "0"],
+                ["12", "17", "15", "7", "8", "1", "2", "0", "0", "0"],
+                ["13", "17", "16", "7", "9", "2", "2", "1", "0", "0"],
+                ["14", "18", "17", "8", "11", "2", "3", "1", "1", "0"],
+                ["15", "18", "18", "8", "12", "2", "4", "1", "1", "0"],
+                ["16", "19", "19", "8", "14", "3", "4", "2", "1", "0"],
+                ["17", "19", "20", "8", "15", "3", "5", "2", "1", "0"],
+                ["18", "19", "20", "8", "16", "3", "7", "3", "2", "0"],
+                ["19", "19", "20", "8", "18", "4", "10", "3", "3", "1"],
+                ["20", "19", "20", "8", "19", "4", "12", "4", "4", "1"]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "name": "Magic Item Price",
+      "page": 1,
+      "source": "OperazioneGalloRuspante",
+      "entries": [
+        "A Minor Tier magic item's asking price is usually in the lower range of its rarity, a Major Tier is in the upper range. Use the following table as a reference.",
+        {
+          "type": "table",
+          "caption": "Magic Item Price*",
+          "footnotes": ["* halved for consumables"],
+          "colLabels": [
+            "Rarity",
+            "",
+            "Random",
+            "",
+            "",
+            "Minor Tier",
+            "",
+            "Average",
+            "",
+            "Major Tier",
+            ""
+          ],
+          "colStyles": [
+            "text-center col-2",
+            "text-center col-0",
+            "text-center col-4",
+            "text-center col-0",
+            "text-center col-0",
+            "text-center col-2",
+            "text-center col-0",
+            "text-center col-2",
+            "text-center col-0",
+            "text-center col-2",
+            "text-center col-0"
+          ],
+          "rows": [
+            [
+              "Common",
+              "",
+              "{@dice (1d6 + 1) × 10}  gp",
+              "",
+              "",
+              "20 gp",
+              "",
+              "45 gp",
+              "",
+              "70 gp",
+              ""
+            ],
+            [
+              "Uncommon",
+              "",
+              "{@dice 1d6 × 100} gp",
+              "",
+              "",
+              "100 gp",
+              "",
+              "350 gp",
+              "",
+              "600 gp",
+              ""
+            ],
+            [
+              "Rare",
+              "",
+              "{@dice 2d10 × 1,000} gp",
+              "",
+              "",
+              "2,000 gp",
+              "",
+              "11,000 gp",
+              "",
+              "20,000 gp",
+              ""
+            ],
+            [
+              "Very rare",
+              "",
+              "{@dice (1d4 + 1) × 10,000} gp",
+              "",
+              "",
+              "20,000 gp",
+              "",
+              "35,000 gp",
+              "",
+              "50,000 gp",
+              ""
+            ],
+            [
+              "Legendary",
+              "",
+              "{@dice 2d6 × 25,000} gp",
+              "",
+              "",
+              "50,000 gp",
+              "",
+              "175,000 gp",
+              "",
+              "300,000 gp",
+              ""
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "name": "Scroll Prices; Scribing Scrolls Cost",
+      "page": 1,
+      "source": "OperazioneGalloRuspante",
+      "entries": [
+        "Use the following table to determine the asking price and scribing cost for spell scrolls.",
+        {
+          "type": "table",
+          "colLabels": [
+            "Rarity",
+            "",
+            "Level",
+            "Asking Price",
+            "",
+            "Scribe Cost",
+            "",
+            "Scribing Time",
+            ""
+          ],
+          "colStyles": [
+            "text-center col-2",
+            "text-center col-0",
+            "text-center col-1",
+            "text-center col-3",
+            "text-center col-0",
+            "text-center col-3",
+            "text-center col-0",
+            "text-center col-3",
+            "text-center col-0"
+          ],
+          "rows": [
+            ["Common", "", "0", "50 gp", "", "40 gp", "", "1 day", ""],
+            ["", "", "1", "150 gp", "", "100 gp", "", "1 day", ""],
+            ["", "", "2", "300 gp", "", "200 gp", "", "2 days", ""],
+            ["Uncommon", "", "3", "500 gp", "", "340 gp", "", "3 days", ""],
+            ["Rare", "", "4", "1,000 gp", "", "700 gp", "", "4 days", ""],
+            ["", "", "5", "2,000 gp", "", "1,400 gp", "", "5 days", ""],
+            [
+              "Very rare",
+              "",
+              "6",
+              "10,000 gp",
+              "",
+              "6,700 gp",
+              "",
+              "6 days",
+              ""
+            ],
+            ["", "", "7", "20,000 gp", "", "14,000 gp", "", "7 days", ""],
+            ["", "", "8", "30,000 gp", "", "20,000 gp", "", "8 days", ""],
+            [
+              "Legendary",
+              "",
+              "9",
+              "50,000 gp",
+              "",
+              "34,000 gp",
+              "",
+              "9 days",
+              ""
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "subclass": [
+    {
+      "name": "Sniper",
+      "shortName": "Sniper",
+      "source": "OGR",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Sniper|Rogue||Sniper|OGR|3",
+        "Sniping Techniques|Rogue||Sniper|OGR|9",
+        "Master of Stealth|Rogue||Sniper|OGR|13",
+        "Deadly Shot|Rogue||Sniper|OGR|17"
+      ]
+    }
+  ],
+  "subclassFeature": [
+    {
+      "name": "Sniper",
+      "source": "OGR",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Sniper",
+      "subclassSource": "OGR",
+      "level": 3,
+      "entries": [
+        "Snipers are the apex of marksmanship, able to reliably make incredibly hard and precisely targeted shots from great distance, given the time to take aim from a safe spot. Meeting these conditions means that snipers have to train in hit and run tactics, to be masters of stealth and to develop the ability to instantly grasp the state and shape of the battlefield, making them excellent tacticians.",
+        "Their privileged position in battle also means they have a more comprehensive and global point of view of the battlefield, so snipers often cover the role of coordinating the actions of their allies from afar.",
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Sniping Tactics|Rogue||Sniper|OGR|3"
+        },
+        {
+          "type": "refSubclassFeature",
+          "subclassFeature": "Customized Weapon|Rogue||Sniper|OGR|3"
+        }
+      ]
+    },
+    {
+      "name": "Sniping Tactics",
+      "source": "OGR",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Sniper",
+      "subclassSource": "OGR",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "You are trained in a number of tactics to make the most out of your role in combat. Your ability to execute them is represented by your Tactics dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel the various tactics you know, which are detailed below.",
+        "Some of your tactics expend the Tactics die they use, as specified in a tactic's description, and you can't use a tactic if it requires you to use a die when your dice are all expended. You regain all your expended Tactics dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Tactics die, but you can't do so again until you finish a short or long rest.",
+        "When you reach certain levels in this class, the size of your Tactics dice increases: at 5th level (d8), 11th level (d10), and 17th level (d12).",
+        "The tactics below use your Tactics dice.",
+        {
+          "type": "entries",
+          "name": "Coordinator",
+          "entries": [
+            "You know how to build small communication devices that you distribute among your allies. You can establish a remote, verbal communication between yourself and others—perfect for quiet infiltration. As an action, choose one or more creatures within 10 ft. of you, up to a number of creatures equal to your proficiency bonus, and then roll one Tactics die. For a number of hours equal to the number rolled, the chosen creatures can speak remotely with you, and you can speak remotely with them.",
+            "To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this way of communicating if it can't speak/hear or if it can't speak any languages, and a creature can end the connection at any time (no action required). You and the creature need to speak a common language to understand each other. The first time you use this power after each long rest, you don't expend the Tactics die. All other times you use the power, you expend the die."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Hidden Menace",
+          "entries": [
+            "One of the sniper's main roles is to exert pressure on the enemy. The knowledge of a sniper's presence is enough to distract and make any opponent wary, afraid of being in their crosshair. When you hit a creature with a ranged weapon attack, your allies make melee attack rolls with advantage against that creature until the start of your next turn. If the attack misses, you can expend a Tactics die to still apply this effect. This effect is only active while you have line of sight with the creature."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Customized Weapon",
+      "source": "OGR",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Sniper",
+      "subclassSource": "OGR",
+      "level": 3,
+      "header": 1,
+      "entries": [
+        "You have a special bond with your weapon of choice, and have spent many hours customizing and improving it. Your Customized Weapon can be any bow or crossbow, and you can only have one Customized Weapon at any time. If you lose your special weapon for whatever reason, you can spend 1 hour working with a set of woodworker's tools to customize another weapon.",
+        {
+          "type": "entries",
+          "name": "Fast Bullet",
+          "entries": [
+            "If you make an attack roll with your Customized Weapon and miss the target, you can roll one Tactics die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Tactics die."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Heavy Bullet",
+          "entries": [
+            "If you hit with an attack roll with your Customized Weapon, you can expend and roll one Tactics die and add the number rolled to the damage roll."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sniping Techniques",
+      "source": "OGR",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Sniper",
+      "subclassSource": "OGR",
+      "level": 9,
+      "entries": [
+        "At 9th level, you gain the following features:",
+        {
+          "type": "entries",
+          "name": "Trivial Shot",
+          "entries": [
+            "Training and experience are the true strength of a great marksman. You have learned to immediately recognize an easy shot, and never miss it.",
+            "When you make a ranged attack roll with a weapon with which you have proficiency, you can expend one Tactics die and decide to forgo rolling the d20 and instead get a 10 on the die. You expend the die only if the attack hits."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Targeted Disruption",
+          "entries": [
+            "You learn how to target your enemies at exactly the right spot to impede them. Before you make a ranged attack roll in which you have advantage, as a bonus action, you can roll one Tactics die and focus your shot on a specific target on your opponent's body. By doing so you can target either their legs or their weapon.",
+            "If the attack hits, after dealing the damage, you can take the Grapple action or the Disarm action. You use Dexterity as the ability for the check, and you can add the result of your Tactics die roll to the result. If the grapple or disarm succeeds, you expend the die."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Master of Stealth",
+      "source": "OGR",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Sniper",
+      "subclassSource": "OGR",
+      "level": 13,
+      "entries": [
+        "You are incredibly proficient at hiding and moving between your hiding spots. As an action, you can magically become invisible, along with anything you are wearing or carrying, while you are at least behind half cover or lightly obscured.",
+        "This invisibility ends immediately after you deal damage to a creature or you force a creature to make a saving throw. Once you use this feature, you can't do so again until you finish a long rest, unless you expend a Tactics die to use this feature again."
+      ]
+    },
+    {
+      "name": "Deadly Shot",
+      "source": "OGR",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Sniper",
+      "subclassSource": "OGR",
+      "level": 17,
+      "entries": [
+        "You learn how to momentarily focus all your concentration on a single, lethal shot. When you make a ranged attack roll in which you have advantage, you can choose to automatically hit the target instead. If you do, you apply your sneak attack damage twice.",
+        "Once you use this feature, you can’t do so again until you finish a long rest, unless you expend three Tactics dice to use it again."
+      ]
+    }
+  ],
+  "optionalfeature": [
+    {
+      "name": "Expert Agility",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "entries": [
+        "Your armor class equals 10 + your Dexterity modifier + your Intelligence modifier when you are not wearing any armor. You can don a shield and still gain the benefit from this Training."
+      ]
+    },
+    {
+      "name": "Expert Breach",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 12,
+            "class": {
+              "name": "Tinkerer"
+            }
+          }
+        }
+      ],
+      "entries": [
+        "Your broad knowledge allows you to study an opponent and gain a brief flash of insight to breach their defenses. By spending 2 Epiphany points as a part of your attack, you can ignore one damage resistance of your choice of a creature you can see until the start of your next turn."
+      ]
+    },
+    {
+      "name": "Expert Defense",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "entries": [
+        "You can study your opponents and learn to anticipate their attacks. When a creature you can see attacks you, you can spend 1 Epiphany point as a reaction to gain a bonus to your AC equal to your Intelligence modifier until the start of your next turn."
+      ]
+    },
+    {
+      "name": "Expert Dodge",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Tinkerer"
+            }
+          }
+        }
+      ],
+      "entries": [
+        "Your luck, reflexes, and intuition allow you to avoid an attack or spel. When an attacker that you can see hits you with an attack, you can spend 2 Epiphany Points as a reaction to halve the attack's damage against you.",
+        "You almost dodge out of the way, take cover from a spell, or otherwise escape the brunt of the damage."
+      ]
+    },
+    {
+      "name": "Expert Escape",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "entries": [
+        "You can expend a Reminiscence Point to take the Dash, Disengage, or Hide action as a bonus action on each of your turns."
+      ]
+    },
+    {
+      "name": "Expert Trickster",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "entries": [
+        "You learn 2 cantrips from any spell list. Intelligence is your spellcasting ability for these cantrips"
+      ]
+    },
+    {
+      "name": "Expert Strike",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Tinkerer"
+            }
+          }
+        }
+      ],
+      "entries": [
+        "With a quick study of a vulnerable opponent's defenses, you can spot the precise area you need to hit to score a telling blow. You can spend 1 Resilience point to gain 1d6 points of sneak attack damage. You must follow the normal rules of sneak attack from the Rogue class. You can spend this point before or after you roll, but before results are determined.",
+        "The damage for this feature improves at certain levels (2d6 at 7th level, 3d6 at 11th level, 4d6 at 15th level, and 5d6 at 19th level)."
+      ]
+    },
+    {
+      "name": "Expert Surge",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Tinkerer"
+            }
+          }
+        }
+      ],
+      "entries": [
+        "You learn how to push yourself beyond your limits when needed. By spending 3 Resilience points, you gain an extra action on top of your normal action and possible bonus action.",
+        "Once you use this feature, you can't use it again until you finish a long or short rest."
+      ]
+    },
+    {
+      "name": "Expert Resilience",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 12,
+            "class": {
+              "name": "Tinkerer"
+            }
+          }
+        }
+      ],
+      "entries": [
+        "If you take damage that would reduce you to 0 hit points, you can instead spend 4 Resilience points as a reaction to drop to 1 hit point instead.",
+        "You almost dodge out of the way, take cover from a spell, or otherwise escape the brunt of the damage."
+      ]
+    },
+    {
+      "name": "Clerical Training",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Tinkerer"
+            }
+          }
+        }
+      ],
+      "entries": [
+        "Tinkerers are legendary for the number of holy symbols, lucky trinkets, and blessed items they keep handy. As the saying goes, there are no atheists in the dungeon.",
+        "You have a pool of healing power that replenishes when you take a long rest. With that pool, as an action, you can restore a total number of hit points equal to your Factotum level × 3. Alternatively, you can expend 5 health points from your pool to cure your target from a disease of from poison. Additionally:",
+        "You prepare the list of tinkerer spells that are available for you to cast, choosing from the {@filter wizard or bard spell list|spells|level=1;2;3;4;5|class=wizard;bard}. When you do so, choose a number of tinkerer spells equal to your Intelligence modifier + half your tinkerer level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.",
+        {
+          "type": "list",
+          "entries": [
+            "If you use this ability to injure undead, you must hit with a melee spell attack. If you hit, you deal radiant damage equal to twice your factotum level + your Intelligence modifier.",
+            "If you use this ability to turn undead, you act as a cleric of a level equal to your factotum level. The saving throw for this effect uses your Spellcasting save DC."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Quick Fencer",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Tinkerer"
+            }
+          }
+        }
+      ],
+      "entries": [
+        "When you take the Attack action on your turn, you can make two attacks, instead of one."
+      ]
+    },
+    {
+      "name": "Eldritch Connoisseur",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Tinkerer"
+            }
+          }
+        }
+      ],
+      "entries": [
+        "You gain the benefits of the {@feat Eldritch Adept|TCE} feat."
+      ]
+    },
+    {
+      "name": "Metamagic Connoisseur",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 3,
+            "class": {
+              "name": "Tinkerer"
+            },
+            "subclass": {
+              "name": "Magician"
+            }
+          }
+        }
+      ],
+      "entries": [
+        "You gain the benefits of the {@feat Eldritch Adept|TCE} feat."
+      ]
+    },
+    {
+      "name": "Smart Trinket",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 5,
+            "class": {
+              "name": "Tinkerer"
+            },
+            "subclass": {
+              "name": "Magician"
+            }
+          }
+        }
+      ],
+      "entries": [
+        "You can add your Intelligence modifier to the damage rolls of the spells stored in your magical trinkets."
+      ]
+    },
+    {
+      "name": "Witchcraft Initiate",
+      "source": "OGR",
+      "page": 10,
+      "srd": true,
+      "featureType": ["TT"],
+      "prerequisite": [
+        {
+          "level": {
+            "level": 15,
+            "class": {
+              "name": "Tinkerer"
+            },
+            "subclass": {
+              "name": "Magician"
+            }
+          }
+        }
+      ],
+      "entries": [
+        "Every time you finish a long rest, you may choose one 2nd level ability from any Wizard subclass of which you have a spell prepared. You gain that ability for the next 24 hours, or until you select a new ability using this Training."
+      ]
+    }
+  ],
+  "item": [
+    {
+      "name": "Eregast's Lantern",
+      "source": "OGR",
+      "page": 3,
+      "rarity": "artifact",
+      "reqAttune": "by an artificer",
+      "wondrous": true,
+      "focus": ["Artificer"],
+      "bonusSpellAttack": "+2",
+      "recharge": "dawn",
+      "charges": 3,
+      "entries": [
+        "This rusty lantern was created by Eregast, to be buried in his Mausoleum, deep in the jungles of Xen’Drik, after his death. The lantern appears dim and opaque, and looking inside it’s hard to tell if it’s even lit.",
+        {
+          "type": "entries",
+          "name": "Dormant",
+          "entries": [
+            "While holding Eregast’s Lantern with one hand, or keeping it secured to your belt, or to a rod or staff you’re holding, you gain a +1 bonus to spell attack rolls.",
+            "The lantern has 3 charges. While holding it, you can use an action to expend 1 or more of its charges to cause one of the following effects:",
+            {
+              "type": "list",
+              "items": [
+                "You cast one of your artificer spells with a casting time of 1 action or less with a +1 bonus to its DC (1 charge). You still expend the corresponding spell slot normally.",
+                "You imbue the lantern with one of your artificer infusions. This doesn’t count against your maximum number of infusions, but follows the normal rules for infusing an item otherwise (3 charges). The lantern doesn’t recover these charges until you end the infusion."
+              ]
+            },
+            "The lantern regains 1d2 + 1 expended charges daily at dawn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Awakened",
+          "entries": [
+            "When Eregast’s Lantern reaches an awakened state, it gains the following properties:",
+            {
+              "type": "list",
+              "items": [
+                "The lantern’s charges increase to 6 and it regains 1d4 + 2 expended charges daily at dawn.",
+                "The bonus to spell attack rolls increases to +2."
+              ]
+            },
+            "By expending its charges you can cause the following additional effects:",
+            {
+              "type": "list",
+              "items": [
+                "You cast one of your artificer spells with a casting time of 1 action or less with a +2 bonus to its DC (2 charges). You still expend the corresponding spell slot normally.",
+                "You recover one or more spell slots of a total level equal to the charges you expend (es.: 3 charges for  1 level 1 and 1 level 2 slots), to a maximum of 3 between two long rests."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Exalted",
+          "entries": [
+            "When Eregast’s Lantern  reaches an exalted state, it gains the following properties:",
+            {
+              "type": "list",
+              "items": [
+                "The lantern’s charges increase to 10 and it regains 1d6 + 4 expended charges daily at dawn. If you expend the last charge, once before the next dawn, roll a d20. On a 20, the lantern regains 1d2 + 1 charges.",
+                "The bonus to spell attack rolls increases to +3.",
+                "The lantern counts as two magic items with regard to the number of magic items you can attune to."
+              ]
+            },
+            "By expending its charges you can cause the following additional effects:",
+            {
+              "type": "list",
+              "items": [
+                "You cast one of your artificer spells with a casting time of 1 action or less with a +3 bonus to its DC (3 charges). You still expend the corresponding spell slot normally.",
+                "You recover one or more spell slots of a total level equal to the charges you expend (es.: 3 charges for  1 level 1 and 1 level 2 slots), to a maximum of 5 between two long rests."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Larhut's Hat",
+      "source": "OGR",
+      "page": 3,
+      "rarity": "artifact",
+      "reqAttune": "by a spellcaster",
+      "wondrous": true,
+      "entries": [
+        "As a bonus action, you can direct this hat to fly on another creature's head. The other creature makes a DC 20 Saving Throw. If it fails, this has the same effect as casting {@spell hold person} on that creature. The DC for the saving throw is 20"
+      ]
+    },
+    {
+      "name": "Larhut's Glasses",
+      "source": "OGR",
+      "page": 3,
+      "rarity": "artifact",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "As an action, you can activate the glasses to cast {@spell true seeing}. You can't use this feature again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Shield (worn)",
+      "source": "OGR",
+      "page": 3,
+      "ac": 2,
+      "entries": [
+        "A shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 2. You can benefit from only one shield at a time."
+      ]
+    },
+    {
+      "name": "Shield (held)",
+      "source": "OGR",
+      "page": 3,
+      "ac": 1,
+      "entries": [
+        "A held shield is made from wood or metal and is carried in one hand. Wielding a shield increases your Armor Class by 1. You can benefit from only one shield at a time.",
+        "Donning and doffing a held shield requires an interaction."
+      ]
+    },
+    {
+      "name": "Shield (buckler)",
+      "source": "OGR",
+      "page": 3,
+      "ac": 1,
+      "entries": [
+        "A buckler is made from wood or metal and is worn on the forearm. You can benefit from only one shield at a time.",
+        "While wearing a buckler, you can:",
+        {
+          "type": "list",
+          "items": [
+            "Use a bonus action to gain a +1 bonus to your AC (this counts as a shield) until the beginning of your next turn",
+            "Use a reaction to gain a +1 bonus to your AC (this counts as a shield) on one attack"
+          ]
+        }
+      ]
+    }
+  ],
+  "background": [
+    {
+      "name": "Rogue Archaeologist",
+      "source": "OGR",
+      "page": 4,
+      "entries": [
+        {
+          "type": "list",
+          "style": "list-hang-notitle",
+          "items": [
+            {
+              "type": "item",
+              "name": "Skill Proficiencies",
+              "entry": "{@skill History}, {@skill Deception}"
+            },
+            {
+              "type": "item",
+              "name": "Tool Proficiencies",
+              "entry": "{@item Cartographer's tools|phb} or {@item navigator's tools|phb}"
+            },
+            {
+              "type": "item",
+              "name": "Languages",
+              "entry": "One of your choice"
+            },
+            {
+              "type": "item",
+              "name": "Equipment",
+              "entry": "A {@item Map or Scroll Case|phb|wooden case} containing a map to a ruin or dungeon, a {@item bullseye lantern|phb}, a {@item miner's pick|phb}, a set of {@item traveler's clothes|phb}, a {@item shovel|phb}, a {@item two-person tent|phb}, a {@item trinket|phb|trinket} recovered from a dig site, and a {@item pouch|phb} containing 25 gp"
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Description",
+          "entries": [
+            "A rogue archaeologist preys on the long-lost and fallen cultures of the past by stealing and collecting their remains — their bones, their ruins, their surviving masterworks, and their tombs. Those who practice archaeology travel to the far corners of the world to root through crumbled cities and lost dungeons, digging in search of artifacts that might tell the stories of monarchs and high priests, wars and cataclysms - and fetch a high price on the black market -, often finding themselves in direct confrontation with ancient and powerful guardians and forgotten creatures."
+          ]
+        },
+        {
+          "name": "Dust Digger",
+          "type": "entries",
+          "entries": [
+            "Prior to becoming an adventurer, you spent most of your young life crawling around in the dust, pilfering relics of questionable value from crypts and ruins. Though you managed to sell a few of your discoveries and earn enough coin to buy proper adventuring gear, you have held onto an item that has great emotional value to you. Roll on the Signature Item table to see what you have, or choose an item from the table.",
+            {
+              "type": "table",
+              "caption": "Signature Item",
+              "colLabels": ["d8", "Item"],
+              "colStyles": ["col-1 text-center", "col-11"],
+              "rows": [
+                ["1", "{@item pole (10-foot)|phb|10-foot pole}"],
+                ["2", "{@item Crowbar|phb}"],
+                ["3", "Hat"],
+                ["4", "{@item Hooded lantern|phb}"],
+                ["5", "Medallion"],
+                ["6", "{@item Shovel|phb}"],
+                ["7", "{@item Sledgehammer|phb}"],
+                ["8", "{@item Whip|phb}"]
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Feature: Historical Knowledge",
+          "type": "entries",
+          "entries": [
+            "When you enter a ruin or dungeon, you can correctly ascertain its original purpose and determine its builders, whether those were dwarves, elves, humans, yuan-ti, or some other known race. In addition, you can determine the monetary value of art objects more than a century old."
+          ],
+          "data": {
+            "isFeature": true
+          }
+        }
+      ],
+      "skillProficiencies": [
+        {
+          "history": true,
+          "deception": true
+        }
+      ],
+      "languageProficiencies": [
+        {
+          "anyStandard": 1
+        }
+      ],
+      "toolProficiencies": [
+        {
+          "choose": {
+            "from": ["navigator's tools", "cartographer's tools"]
+          }
+        }
+      ],
+      "startingEquipment": [
+        {
+          "_": [
+            {
+              "item": "map or scroll case|phb",
+              "displayName": "wooden case containing a map to a ruin or dungeon"
+            },
+            "bullseye lantern|phb",
+            "miner's pick|phb",
+            "traveler's clothes|phb",
+            "shovel|phb",
+            "two-person tent|phb",
+            {
+              "item": "trinket|phb",
+              "displayName": "trinket recovered from a dig site"
+            },
+            {
+              "item": "pouch|phb",
+              "containsValue": 2500
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
