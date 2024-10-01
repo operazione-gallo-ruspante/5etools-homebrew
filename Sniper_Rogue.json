@@ -2,13 +2,13 @@
   "_meta": {
     "sources": [
       {
-        "json": "ruindomain",
+        "json": "sniperrogue",
         "abbreviation": "Brew",
-        "full": "Ruin Domain",
-        "authors": ["zeek0"],
-        "convertedBy": ["EldritchTiefling"],
-        "version": "21.02.19",
-        "url": "https://drive.google.com/file/d/1n74fDG0Oo20-buFl0OIdtHpqpXEpkr0v/view",
+        "full": "Sniper Rogue",
+        "authors": ["Gallo Ruspante"],
+        "convertedBy": ["Gallo Ruspante"],
+        "version": "01.10.2024",
+        "url": "",
         "targetSchema": "1.0.1"
       }
     ],
