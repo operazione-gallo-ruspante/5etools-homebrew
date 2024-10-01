@@ -773,10 +773,10 @@
       "className": "Rogue",
       "classSource": "PHB",
       "subclassFeatures": [
-        "Sniper|Rogue||Sniper|OGR|3",
-        "Sniping Techniques|Rogue||Sniper|OGR|9",
-        "Master of Stealth|Rogue||Sniper|OGR|13",
-        "Deadly Shot|Rogue||Sniper|OGR|17"
+        "Sniper|Rogue|PHB|Sniper|OGR|3",
+        "Sniping Techniques|Rogue|PHB|Sniper|OGR|9",
+        "Master of Stealth|Rogue|PHB|Sniper|OGR|13",
+        "Deadly Shot|Rogue|PHB|Sniper|OGR|17"
       ]
     }
   ],
@@ -788,6 +788,7 @@
       "classSource": "PHB",
       "subclassShortName": "Sniper",
       "subclassSource": "OGR",
+      "page": 1,
       "level": 3,
       "entries": [
         "Snipers are the apex of marksmanship, able to reliably make incredibly hard and precisely targeted shots from great distance, given the time to take aim from a safe spot. Meeting these conditions means that snipers have to train in hit and run tactics, to be masters of stealth and to develop the ability to instantly grasp the state and shape of the battlefield, making them excellent tacticians.",
@@ -810,6 +811,7 @@
       "subclassShortName": "Sniper",
       "subclassSource": "OGR",
       "level": 3,
+      "page": 1,
       "header": 1,
       "entries": [
         "You are trained in a number of tactics to make the most out of your role in combat. Your ability to execute them is represented by your Tactics dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel the various tactics you know, which are detailed below.",
@@ -841,6 +843,7 @@
       "subclassShortName": "Sniper",
       "subclassSource": "OGR",
       "level": 3,
+      "page": 1,
       "header": 1,
       "entries": [
         "You have a special bond with your weapon of choice, and have spent many hours customizing and improving it. Your Customized Weapon can be any bow or crossbow, and you can only have one Customized Weapon at any time. If you lose your special weapon for whatever reason, you can spend 1 hour working with a set of woodworker's tools to customize another weapon.",
@@ -868,6 +871,7 @@
       "subclassShortName": "Sniper",
       "subclassSource": "OGR",
       "level": 9,
+      "page": 1,
       "entries": [
         "At 9th level, you gain the following features:",
         {
@@ -896,6 +900,7 @@
       "subclassShortName": "Sniper",
       "subclassSource": "OGR",
       "level": 13,
+      "page": 1,
       "entries": [
         "You are incredibly proficient at hiding and moving between your hiding spots. As an action, you can magically become invisible, along with anything you are wearing or carrying, while you are at least behind half cover or lightly obscured.",
         "This invisibility ends immediately after you deal damage to a creature or you force a creature to make a saving throw. Once you use this feature, you can't do so again until you finish a long rest, unless you expend a Tactics die to use this feature again."
@@ -909,6 +914,7 @@
       "subclassShortName": "Sniper",
       "subclassSource": "OGR",
       "level": 17,
+      "page": 1,
       "entries": [
         "You learn how to momentarily focus all your concentration on a single, lethal shot. When you make a ranged attack roll in which you have advantage, you can choose to automatically hit the target instead. If you do, you apply your sneak attack damage twice.",
         "Once you use this feature, you can’t do so again until you finish a long rest, unless you expend three Tactics dice to use it again."
