@@ -2,40 +2,41 @@
   "_meta": {
     "sources": [
       {
-        "json": "sniperrogue",
-        "abbreviation": "Brew",
+        "json": "OGR",
+        "abbreviation": "JRR",
         "full": "Sniper Rogue",
-        "authors": ["Gallo Ruspante"],
-        "convertedBy": ["Gallo Ruspante"],
-        "version": "01.10.2024",
         "url": "",
-        "targetSchema": "1.0.1"
+        "authors": ["LP"],
+        "convertedBy": ["LP"],
+        "version": "5.2"
       }
     ],
-    "dateAdded": 1589914515,
-    "dateLastModified": 1589914515,
-    "_dateLastModifiedHash": "782cfd8a25"
+    "optionalFeatureTypes": {
+      "DT": "Dirty Tactic"
+    },
+    "dateAdded": 1643217224,
+    "dateLastModified": 1643675458,
+    "_dateLastModifiedHash": "90211fab63"
   },
   "subclass": [
     {
-      "name": "Sniper",
-      "shortName": "Sniper",
+      "name": "Path of the Sniper",
       "source": "OGR",
-      "subclassFeatures": [
-        "Sniper|Rogue|PHB|Sniper|OGR|3",
-        "Sniping Techniques|Rogue|PHB|Sniper|OGR|9",
-        "Master of Stealth|Rogue|PHB|Sniper|OGR|13",
-        "Deadly Shot|Rogue|PHB|Sniper|OGR|17"
-      ],
+      "shortName": "Sniper",
       "className": "Rogue",
-      "classSource": "PHB"
+      "classSource": "PHB",
+      "subclassFeatures": [
+        "Sniper|Rogue||Sniper|OGR|3",
+        "Sniping Techniques|Rogue||Sniper|OGR|9",
+        "Master of Stealth|Rogue||Sniper|OGR|13",
+        "Deadly Shot|Rogue||Sniper|OGR|17"
+      ]
     }
   ],
   "subclassFeature": [
     {
       "name": "Sniper",
       "source": "OGR",
-      "page": 1,
       "className": "Rogue",
       "classSource": "PHB",
       "subclassShortName": "Sniper",
@@ -46,114 +47,190 @@
         "Their privileged position in battle also means they have a more comprehensive and global point of view of the battlefield, so snipers often cover the role of coordinating the actions of their allies from afar.",
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Sniping Tactics|Rogue|PHB|Sniper|OGR|3"
+          "subclassFeature": "Sniping Tactics|Rogue||Sniper|OGR|3"
         },
         {
           "type": "refSubclassFeature",
-          "subclassFeature": "Customized Weapon|Rogue|PHB|Sniper|OGR|3"
+          "subclassFeature": "Customized Weapon|Rogue||Sniper|OGR|3"
         }
       ]
     },
     {
-        "name": "Sniping Tactics",
-        "source": "OGR",
-        "className": "Rogue",
-        "classSource": "PHB",
-        "subclassShortName": "Sniper",
-        "subclassSource": "OGR",
-        "level": 3,
-        "page": 1,
-        "header": 1,
-        "entries": [
-          "You are trained in a number of tactics to make the most out of your role in combat. Your ability to execute them is represented by your Tactics dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel the various tactics you know, which are detailed below.",
-          "Some of your tactics expend the Tactics die they use, as specified in a tactic's description, and you can't use a tactic if it requires you to use a die when your dice are all expended. You regain all your expended Tactics dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Tactics die, but you can't do so again until you finish a short or long rest.",
-          "When you reach certain levels in this class, the size of your Tactics dice increases: at 5th level (d8), 11th level (d10), and 17th level (d12).",
-          "The tactics below use your Tactics dice.",
-          {
-            "type": "entries",
-            "name": "Coordinator",
-            "entries": [
-              "You know how to build small communication devices that you distribute among your allies. You can establish a remote, verbal communication between yourself and others—perfect for quiet infiltration. As an action, choose one or more creatures within 10 ft. of you, up to a number of creatures equal to your proficiency bonus, and then roll one Tactics die. For a number of hours equal to the number rolled, the chosen creatures can speak remotely with you, and you can speak remotely with them.",
-              "To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this way of communicating if it can't speak/hear or if it can't speak any languages, and a creature can end the connection at any time (no action required). You and the creature need to speak a common language to understand each other. The first time you use this power after each long rest, you don't expend the Tactics die. All other times you use the power, you expend the die."
-            ]
-          },
-          {
-            "type": "entries",
-            "name": "Hidden Menace",
-            "entries": [
-              "One of the sniper's main roles is to exert pressure on the enemy. The knowledge of a sniper's presence is enough to distract and make any opponent wary, afraid of being in their crosshair. When you hit a creature with a ranged weapon attack, your allies make melee attack rolls with advantage against that creature until the start of your next turn. If the attack misses, you can expend a Tactics die to still apply this effect. This effect is only active while you have line of sight with the creature."
-            ]
-          }
-        ]
-      },
-      {
-      "name": "Dissolution",
-      "entries": [
-        "Also at 1st level, you are blessed with greater abilities to dissolve social and civil bonds. You gain proficiency in {@skill Deception}, and your proficiency bonus is doubled for any ability check you make that uses this skill."
-      ],
-      "source": "ruindomain",
-      "page": 36,
-      "className": "Cleric",
+      "name": "Sniping Tactics",
+      "source": "OGR",
+      "className": "Rogue",
       "classSource": "PHB",
-      "subclassShortName": "Ruin",
-      "subclassSource": "ruindomain",
-      "level": 1,
-      "header": 1
-    },
-    {
-      "name": "Channel Divinity: Beget Entropy",
-      "source": "ruindomain",
-      "page": 36,
-      "className": "Cleric",
-      "classSource": "PHB",
-      "subclassShortName": "Ruin",
-      "subclassSource": "ruindomain",
-      "level": 2,
-      "header": 2,
+      "subclassShortName": "Sniper",
+      "subclassSource": "OGR",
+      "level": 3,
+      "header": 1,
       "entries": [
-        "Starting at 2nd level, you can use your channel divinity to create a field of accelerated entropy. As an action, you present your holy symbol and invoke the natural powers of reduction and fragmentation. For one minute, enemy creatures within 60 feet gain half the number of hit points or temporary hit points they would otherwise gain. In addition, when a creature or object within range takes damage you can use your reaction to cause them to take an additional amount of force damage equal to {@dice 1d8} + half your cleric level (rounded down)."
+        "You are trained in a number of tactics to make the most out of your role in combat. Your ability to execute them is represented by your Tactics dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel the various tactics you know, which are detailed below.",
+        "Some of your tactics expend the Tactics die they use, as specified in a tactic's description, and you can't use a tactic if it requires you to use a die when your dice are all expended. You regain all your expended Tactics dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Tactics die, but you can't do so again until you finish a short or long rest.",
+        "When you reach certain levels in this class, the size of your Tactics dice increases: at 5th level (d8), 11th level (d10), and 17th level (d12).",
+        "The tactics below use your Tactics dice.",
+        {
+          "type": "entries",
+          "name": "Coordinator",
+          "entries": [
+            "You know how to build small communication devices that you distribute among your allies. You can establish a remote, verbal communication between yourself and others—perfect for quiet infiltration. As an action, choose one or more creatures within 10 ft. of you, up to a number of creatures equal to your proficiency bonus, and then roll one Tactics die. For a number of hours equal to the number rolled, the chosen creatures can speak remotely with you, and you can speak remotely with them.",
+            "To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this way of communicating if it can't speak/hear or if it can't speak any languages, and a creature can end the connection at any time (no action required). You and the creature need to speak a common language to understand each other. The first time you use this power after each long rest, you don't expend the Tactics die. All other times you use the power, you expend the die."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Hidden Menace",
+          "entries": [
+            "One of the sniper's main roles is to exert pressure on the enemy. The knowledge of a sniper's presence is enough to distract and make any opponent wary, afraid of being in their crosshair. When you hit a creature with a ranged weapon attack, your allies make melee attack rolls with advantage against that creature until the start of your next turn. If the attack misses, you can expend a Tactics die to still apply this effect. This effect is only active while you have line of sight with the creature."
+          ]
+        }
       ]
     },
     {
-      "name": "Channel Divinity: Disruption",
-      "source": "ruindomain",
-      "page": 36,
-      "className": "Cleric",
+      "name": "Customized Weapon",
+      "source": "OGR",
+      "className": "Rogue",
       "classSource": "PHB",
-      "subclassShortName": "Ruin",
-      "subclassSource": "ruindomain",
-      "level": 6,
-      "header": 2,
+      "subclassShortName": "Sniper",
+      "subclassSource": "OGR",
+      "level": 3,
+      "page": 1,
+      "header": 1,
       "entries": [
-        "At 6th level, you may use your channel divinity to bring low your enemies' abilities of creation, thought, and deed. As a bonus action, you present your holy symbol and each enemy creature within 30 feet must make a Wisdom saving throw against your spell save DC. On a failed save, a target immediately loses concentration and has disadvantage on ability checks for one minute. At the end of each of its turns, an affected creature can make another Wisdom saving throw. On a success, the effect ends."
+        "You have a special bond with your weapon of choice, and have spent many hours customizing and improving it. Your Customized Weapon can be any bow or crossbow, and you can only have one Customized Weapon at any time. If you lose your special weapon for whatever reason, you can spend 1 hour working with a set of woodworker's tools to customize another weapon.",
+        {
+          "type": "entries",
+          "name": "Fast Bullet",
+          "entries": [
+            "If you make an attack roll with your Customized Weapon and miss the target, you can roll one Tactics die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Tactics die."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Heavy Bullet",
+          "entries": [
+            "If you hit with an attack roll with your Customized Weapon, you can expend and roll one Tactics die and add the number rolled to the damage roll."
+          ]
+        }
       ]
     },
     {
-      "name": "Potent Spellcasting",
-      "source": "ruindomain",
-      "page": 36,
-      "className": "Cleric",
+      "name": "Sniping Techniques",
+      "source": "OGR",
+      "className": "Rogue",
       "classSource": "PHB",
-      "subclassShortName": "Ruin",
-      "subclassSource": "ruindomain",
-      "level": 8,
-      "header": 2,
+      "subclassShortName": "Sniper",
+      "subclassSource": "OGR",
+      "level": 9,
+      "page": 1,
       "entries": [
-        "Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip."
+        "At 9th level, you gain the following features:",
+        {
+          "type": "entries",
+          "name": "Trivial Shot",
+          "level": 9,
+          "entries": [
+            "Training and experience are the true strength of a great marksman. You have learned to immediately recognize an easy shot, and never miss it.",
+            "When you make a ranged attack roll with a weapon with which you have proficiency, you can expend one Tactics die and decide to forgo rolling the d20 and instead get a 10 on the die. You expend the die only if the attack hits."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Targeted Disruption",
+          "level": 9,
+          "entries": [
+            "You learn how to target your enemies at exactly the right spot to impede them. Before you make a ranged attack roll in which you have advantage, as a bonus action, you can roll one Tactics die and focus your shot on a specific target on your opponent's body. By doing so you can target either their legs or their weapon.",
+            "If the attack hits, after dealing the damage, you can take the Grapple action or the Disarm action. You use Dexterity as the ability for the check, and you can add the result of your Tactics die roll to the result. If the grapple or disarm succeeds, you expend the die."
+          ]
+        }
       ]
     },
     {
-      "name": "Cripple and Despoil",
-      "source": "ruindomain",
-      "page": 36,
-      "className": "Cleric",
+      "name": "Master of Stealth",
+      "source": "OGR",
+      "className": "Rogue",
       "classSource": "PHB",
-      "subclassShortName": "Ruin",
-      "subclassSource": "ruindomain",
+      "subclassShortName": "Sniper",
+      "subclassSource": "OGR",
+      "level": 13,
+      "page": 1,
+      "entries": [
+        "You are incredibly proficient at hiding and moving between your hiding spots. As an action, you can magically become invisible, along with anything you are wearing or carrying, while you are at least behind half cover or lightly obscured.",
+        "This invisibility ends immediately after you deal damage to a creature or you force a creature to make a saving throw. Once you use this feature, you can't do so again until you finish a long rest, unless you expend a Tactics die to use this feature again."
+      ]
+    },
+    {
+      "name": "Deadly Shot",
+      "source": "OGR",
+      "className": "Rogue",
+      "classSource": "PHB",
+      "subclassShortName": "Sniper",
+      "subclassSource": "OGR",
       "level": 17,
-      "header": 2,
+      "page": 1,
       "entries": [
-        "At 17th level, you can fracture and shatter the power of your enemies. When a creature within 30 feet would use a spell, action, or ability to deal damage, you can use your reaction to force the enemy creature to make a Constitution saving throw against your spell save DC. On a failed save that damage is negated, and damage caused by that spell, action, or ability is halved for 24 hours. If the damage source is a weapon it is sundered in this way until it is repaired, unless it is an artifact. On a successful save that damage is halved, with no lingering effects. Once you use this feature, you can't use it again until you finish a short or long rest."
+        "You learn how to momentarily focus all your concentration on a single, lethal shot. When you make a ranged attack roll in which you have advantage, you can choose to automatically hit the target instead. If you do, you apply your sneak attack damage twice.",
+        "Once you use this feature, you can't do so again until you finish a long rest, unless you expend three Tactics dice to use it again."
+      ]
+    }
+  ],
+  "optionalfeature": [
+    {
+      "name": "Throat Slam (Costs 1d6)",
+      "source": "OGR",
+      "featureType": ["DT"],
+      "entries": [
+        "You attempt to crush a creature's windpipe, forcing it to make a Constitution saving throw. On a failed save, until the start of your next turn, the target's next saving throw to maintain concentration is made with disadvantage, and it can only speak falteringly."
+      ]
+    },
+    {
+      "name": "Vicious Wound (Costs 1d6)",
+      "source": "OGR",
+      "featureType": ["DT"],
+      "entries": [
+        "You forgo a direct assault and try to cause a creature greater longterm harm, leaving it bleeding for 1 minute or until it is healed magically. At the start of each of its turns while bleeding, the target's maximum and current hit points decrease by 1 due to blood loss. By succeeding on a Wisdom ({@skill Medicine}) check against your Dirty Tactic DC as an action, the target or one of its allies can stem this bleeding.",
+        "You can spend additional d6s on this Dirty Tactic beyond its normal cost, increasing the hit point decrease by 1 per d6 spent."
+      ]
+    },
+    {
+      "name": "Cheap Shot (Costs 2d6)",
+      "source": "OGR",
+      "featureType": ["DT"],
+      "entries": [
+        "You attempt to debilitate a creature by hitting it in a sensitive area, forcing it to succeed on a Constitution saving throw or have its movement speed reduced by 10 feet until the start of your next turn.",
+        "During this time, the target cannot use the {@action Dash}, {@action Dodge}, {@action Help}, {@action Search}, {@action Ready} or {@action Use an Object} actions, nor can it take reactions."
+      ]
+    },
+    {
+      "name": "Outrageous Insult (Costs 3d6)",
+      "source": "OGR",
+      "featureType": ["DT"],
+      "entries": [
+        "You attempt to draw a creature's ire by infuriating it with a lewd act ( e.g. spitting on it), forcing it to make a Wisdom saving throw. On a failed save, it has disadvantage on its attack rolls against creatures other than you until the start of your next turn."
+      ]
+    },
+    {
+      "name": "Kneecrack (Costs 4d6)",
+      "source": "OGR",
+      "featureType": ["DT"],
+      "entries": [
+        "You attempt to lame a creature that is Large or smaller, forcing it to succeed on a Strength saving throw or fall {@condition prone}."
+      ]
+    },
+    {
+      "name": "Maim (Costs 5d6)",
+      "source": "OGR",
+      "featureType": ["DT"],
+      "entries": [
+        "You attempt to cripple a creature, forcing it to succeed on a Constitution saving throw or drop whatever it's holding in an appendage of your choice. The target cannot use that appendage in any way until the end of its next turn."
+      ]
+    },
+    {
+      "name": "Eye Gouge (Costs 6d6)",
+      "source": "OGR",
+      "featureType": ["DT"],
+      "entries": [
+        "You attempt to curtail a creature's vision by any means necessary, forcing it to succeed on a Dexterity saving throw or be {@condition blinded} until the start of your next turn."
       ]
     }
   ]

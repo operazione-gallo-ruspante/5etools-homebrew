@@ -770,25 +770,25 @@
       "name": "Sniper",
       "shortName": "Sniper",
       "source": "OGR",
-      "className": "Rogue",
-      "classSource": "PHB",
       "subclassFeatures": [
         "Sniper|Rogue|PHB|Sniper|OGR|3",
         "Sniping Techniques|Rogue|PHB|Sniper|OGR|9",
         "Master of Stealth|Rogue|PHB|Sniper|OGR|13",
         "Deadly Shot|Rogue|PHB|Sniper|OGR|17"
-      ]
+      ],
+      "className": "Rogue",
+      "classSource": "PHB"
     }
   ],
   "subclassFeature": [
     {
       "name": "Sniper",
       "source": "OGR",
+      "page": 1,
       "className": "Rogue",
       "classSource": "PHB",
       "subclassShortName": "Sniper",
       "subclassSource": "OGR",
-      "page": 1,
       "level": 3,
       "entries": [
         "Snipers are the apex of marksmanship, able to reliably make incredibly hard and precisely targeted shots from great distance, given the time to take aim from a safe spot. Meeting these conditions means that snipers have to train in hit and run tactics, to be masters of stealth and to develop the ability to instantly grasp the state and shape of the battlefield, making them excellent tacticians.",
